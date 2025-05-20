@@ -1,0 +1,16 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Trusted Financial Guidance Across Africa.",
+      "subtitle": "Tailored legal and financial advices for projects and companies, optimize investments, financial intermediation.",
+      "ctaEmail": "Get Free Tips by Email",
+      "ctaCall": "Schedule a Free Video Consultation"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  }
+}
