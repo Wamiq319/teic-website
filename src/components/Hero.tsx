@@ -1,29 +1,68 @@
-type HeroProps = {
-  title: string;
-  subtitle: string;
-  cta1: string;
-  cta2: string;
-};
+"use client";
 
-export default function Hero({ title, subtitle, cta1, cta2 }: HeroProps) {
+import { Button } from "./ui/Button";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+
+export const HeroSection = () => {
+  const t = useTranslations("HomePage.hero");
+
   return (
-    <section className="text-center py-12">
-      <h1 className="text-4xl font-bold">{title}</h1>
-      <p className="mt-4 text-lg">{subtitle}</p>
-      <div className="mt-6 flex justify-center gap-4">
-        <a
-          href="#email-form"
-          className="bg-blue-600 text-white px-4 py-2 rounded"
-        >
-          {cta1}
-        </a>
-        <a
-          href="#book-call"
-          className="border border-blue-600 px-4 py-2 rounded"
-        >
-          {cta2}
-        </a>
+    <section className="relative h-[90vh] min-h-[600px] w-full bg-[#F8F8F8]">
+      {/* Background image overlay */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image
+          src="/assets/images/africa-map-bg.jpeg"
+          alt="Africa map background"
+          fill
+          className="object-cover opacity-10"
+          priority
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center py-12">
+        {/* Logo - moved up with smaller margin */}
+        <div className="mb-1 w-32 md:w-44 ">
+          <Image
+            src="/assets/images/logo.png"
+            alt="TEIC Global Logo"
+            width={180}
+            height={32}
+            className="w-full  h-auto "
+            priority
+          />
+        </div>
+
+        {/* Headline with tighter spacing */}
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#2E2E2E] mb-4 leading-snug">
+          Trusted Financial Guidance <br className="hidden md:block" /> Across{" "}
+          <span className="text-[#7FC242]">Africa</span>
+        </h1>
+
+        {/* Subheadline with reduced margin */}
+        <p className="text-lg md:text-xl text-[#666666] max-w-2xl mx-auto mb-8">
+          {t("subtitle")}
+        </p>
+
+        {/* CTAs with tighter spacing */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Button
+            variant="primary"
+            onClick={() => {}}
+            className="px-6 py-3 text-base md:text-lg"
+          >
+            {t("ctaEmail")}
+          </Button>
+
+          <Button
+            variant="outline"
+            onClick={() => {}}
+            className="px-6 py-3 text-base md:text-lg border-2"
+          >
+            {t("ctaCall")}
+          </Button>
+        </div>
       </div>
     </section>
   );
-}
+};

@@ -5,6 +5,68 @@
       "subtitle": "Tailored legal and financial advices for projects and companies, optimize investments, financial intermediation.",
       "ctaEmail": "Get Free Tips by Email",
       "ctaCall": "Schedule a Free Video Consultation"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us",
+      "features": [
+        {
+          "title": "Pan-African Expertise",
+          "description": "Local knowledge with continental reach across 20+ African markets",
+          "icon": "globe"
+        },
+        {
+          "title": "Certified Advisors",
+          "description": "Our team holds top-tier financial certifications and licenses",
+          "icon": "shield"
+        },
+        {
+          "title": "Digital-first Approach",
+          "description": "Cutting-edge financial technology for seamless operations",
+          "icon": "cpu"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "items": [
+        {
+          "quote": "TEIC's financial guidance transformed our expansion strategy across East Africa. Their local expertise made all the difference.",
+          "name": "James Mwangi",
+          "position": "CEO, GreenFarm Ltd",
+          "country": "ke"
+        },
+        {
+          "quote": "The most reliable financial advisors we've worked with in Nigeria. They helped us secure funding within 3 months.",
+          "name": "Amina Yusuf",
+          "position": "Finance Director, UrbanTech",
+          "country": "ng"
+        },
+        {
+          "quote": "Their digital-first approach saved us 30% in operational costs while improving our financial reporting.",
+          "name": "Thabo Molefe",
+          "position": "COO, MineWorks SA",
+          "country": "za"
+        },
+        {
+          "quote": "Exceptional understanding of cross-border financial regulations. They navigated complex legal requirements effortlessly.",
+          "name": "Fatima Zahra",
+          "position": "Legal Counsel, TransAfrica Group",
+          "country": "ma"
+        },
+        {
+          "quote": "Instrumental in securing our Series B funding round. Their investor network is unparalleled in West Africa.",
+          "name": "David Ofori",
+          "position": "Founder, FinTech Ghana",
+          "country": "gh"
+        }
+      ]
+    },
+    "emailSignup": {
+      "title": "Get our free e-book:",
+      "subtitle": "The Top 5 Mistakes Businesses Make in Africa",
+      "placeholder": "Your email address",
+      "button": "Get Free E-book",
+      "disclaimer": "Instant lead magnet delivery. We respect your privacy."
     }
   },
   "nav": {
@@ -12,5 +74,41 @@
     "about": "About Us",
     "services": "Services",
     "contact": "Contact"
+  },
+  "Footer": {
+    "company": {
+      "title": "TEIC Global",
+      "description": "Trusted financial guidance across Africa with pan-African expertise and digital-first approach."
+    },
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    },
+    "links": {
+      "title": "Quick Links",
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Our Services",
+      "finance": "Corporate & Project Finance",
+      "debt": "Debt Structuring",
+      "escrow": "Escrow Services",
+      "banking": "Bank Account Setup",
+      "guarantees": "Guarantees & Collateral",
+      "advisory": "Transaction Advisory",
+      "due_diligence": "Investor Due Diligence"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "address": "123 Financial District, City, Country",
+      "phone": "+1 (234) 567-8900",
+      "email": "info@teicglobal.com"
+    },
+    "language": "Change Language",
+    "copyright": "TEIC Global. All rights reserved."
   }
 }

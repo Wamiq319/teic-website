@@ -3,7 +3,8 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
-import '../globals.css'
+import { Footer } from "@/components/Footer";
+import "../globals.css";
 
 export default async function LocaleLayout({
   children,
@@ -19,14 +20,20 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  // Determine text direction based on locale
+  const isRTL = ["ar"].includes(locale); // Add other RTL languages as needed
+  const direction = isRTL ? "rtl" : "ltr";
+
   const messages = await getMessages();
+
   return (
-    <html lang={locale}>
-      <body>
+    <html lang={locale} dir={direction}>
+      <body className={direction}>
         {/* This is the main content of the page */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
-          {children}
+          <main className={direction}>{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
