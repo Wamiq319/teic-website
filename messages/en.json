@@ -110,5 +110,32 @@
     },
     "language": "Change Language",
     "copyright": "TEIC Global. All rights reserved."
+  },
+  "ContactPage": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to answer your questions and discuss how we can help your business thrive in Africa.",
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "email": "Email Address",
+      "message": "Your Message",
+      "button": "Send Message"
+    },
+    "schedule": {
+      "title": "Other Ways to Connect",
+      "subtitle": "Schedule a Call",
+      "description": "Use our calendar to schedule a free 30-minute video consultation at a time that works for you.",
+      "button": "Open Scheduler"
+    },
+    "social": {
+      "title": "Follow Us",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    },
+    "map": {
+      "title": "Our Office",
+      "address": "123 Financial District, City, Country"
+    }
   }
 }
