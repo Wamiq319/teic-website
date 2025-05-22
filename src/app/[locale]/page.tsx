@@ -1,15 +1,15 @@
 import HomePage from "./pages/home";
-// Import other pages when you're ready
 // import AboutPage from "@/pages/about";
 // import ServicesPage from "@/pages/services";
 // import ContactPage from "@/pages/contact";
 
 type Props = {
-  searchParams?: { page?: string };
+  searchParams?: Record<string, string | string[] | undefined>;
 };
 
 export default function LocaleRouter({ searchParams }: Props) {
-  const page = searchParams?.page ?? "home";
+  const pageParam = searchParams?.page;
+  const page = Array.isArray(pageParam) ? pageParam[0] : pageParam ?? "home";
 
   switch (page) {
     case "home":
