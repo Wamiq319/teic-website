@@ -1,4 +1,5 @@
-// app/[lang]/page.tsx
+// src/app/[locale]/pages/home.tsx
+
 import { HeroSection } from "@/components/Hero";
 import { Card } from "@/components/ui/Card";
 import { Globe, ShieldCheck, Cpu } from "lucide-react";
@@ -6,9 +7,20 @@ import { useTranslations } from "next-intl";
 import Testimonials from "@/components/Testimonial";
 import { EmailSignup } from "@/components/EmailSignup";
 
+// Define the expected structure of a feature object
+type Feature = {
+  title: string;
+  description: string;
+};
+
+type WhyChooseUs = {
+  title: string;
+  features: Feature[];
+};
+
 export default function HomePage() {
   const t = useTranslations("HomePage");
-  const whyChooseUs = t.raw("whyChooseUs");
+  const whyChooseUs = t.raw("whyChooseUs") as WhyChooseUs;
 
   const icons = [
     <Globe size={32} key="globe" />,
@@ -31,7 +43,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {whyChooseUs.features.map((feature: any, index: number) => (
+            {whyChooseUs.features.map((feature, index) => (
               <Card
                 key={index}
                 icon={icons[index]}
@@ -42,6 +54,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       <Testimonials />
       <EmailSignup />
     </main>

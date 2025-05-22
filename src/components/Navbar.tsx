@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import Image from "next/image";
 
 const NAV_ITEMS = [
   { path: "home", key: "home" },
@@ -32,7 +33,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between gap-1 sm:gap-3">
           {/* Logo */}
           <Link href={`/${locale}`} aria-label="TEIC Global Home">
-            <img
+            <Image
               src="/assets/images/logo.png"
               alt="TEIC Global Logo"
               className="w-8 sm:w-10 md:w-12"

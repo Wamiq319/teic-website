@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Quote } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const countryMap: Record<string, string> = {
   ke: "Kenya",
@@ -66,7 +67,7 @@ export default function Testimonials() {
           >
             <Quote className="w-10 h-10 text-gray-300 mb-4 mx-auto" />
             <p className="text-xl italic text-gray-700 mb-6">
-              "{testimonial.quote}"
+              &quot;{testimonial.quote}&quot;
             </p>
 
             <div className="flex items-center justify-center space-x-4">
@@ -79,8 +80,10 @@ export default function Testimonials() {
                 </p>
                 <p className="text-sm text-gray-600">{testimonial.position}</p>
                 <div className="flex items-center space-x-2 mt-1">
-                  <img
-                    src={`assets/images/${testimonial.country}.png`}
+                  <Image
+                    width={24}
+                    height={24}
+                    src={`/assets/images/${testimonial.country}.png`}
                     alt={countryMap[testimonial.country]}
                     className="w-6 h-6 object-cover rounded-full"
                   />
