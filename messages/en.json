@@ -125,7 +125,8 @@
       "title": "Other Ways to Connect",
       "subtitle": "Schedule a Call",
       "description": "Use our calendar to schedule a free 30-minute video consultation at a time that works for you.",
-      "button": "Open Scheduler"
+      "button": "Open Scheduler",
+      "direct": "Or contact directly:"
     },
     "social": {
       "title": "Follow Us",
@@ -136,6 +137,129 @@
     "map": {
       "title": "Our Office",
       "address": "123 Financial District, City, Country"
+    }
+  },
+  "ServicesPage": {
+    "title": "Corporate & Project Finance Services",
+    "subtitle": "Tailored solutions to navigate Africa's financial landscape with confidence",
+    "book_button": "Book Consultation",
+    "cta": {
+      "title": "Need Custom Financial Solutions?",
+      "description": "Our team stands ready to design services specific to your African venture's requirements",
+      "button": "Get Personalized Advice"
+    },
+    "capital_raising": {
+      "title": "Capital Raising & Investor Matching",
+      "description": "We assist companies in identifying and negotiating with suitable investors across Africa and globally.",
+      "includes": {
+        "structuring_proposals": "Structuring investment proposals and pitch decks",
+        "sourcing_investors": "Sourcing private equity, venture capital, or institutional investors",
+        "facilitating_partnerships": "Facilitating joint ventures and strategic partnerships",
+        "preparing_documentation": "Preparing data rooms and due diligence documentation"
+      }
+    },
+    "debt_structuring": {
+      "title": "Debt Structuring & Financing Facilitation",
+      "description": "We support companies in raising debt through banks, DFIs, and bond markets with optimal terms.",
+      "includes": {
+        "loan_preparation": "Preparation of loan applications and business plans",
+        "terms_negotiation": "Negotiation of loan terms and conditions",
+        "finance_types": "Bridging finance, trade finance, and asset-backed loans",
+        "debt_restructuring": "Restructuring and refinancing existing debt"
+      }
+    },
+    "escrow_services": {
+      "title": "Escrow Account Setup & Transaction Mediation",
+      "description": "Independent third-party escrow services to secure transactions and protect all parties.",
+      "includes": {
+        "drafting_agreements": "Drafting and managing escrow agreements",
+        "coordinating_agents": "Coordinating with licensed escrow banks or fiduciary agents",
+        "escrow_solutions": "Escrow solutions for real estate, import-export, joint ventures, and IP licensing"
+      }
+    },
+    "bank_account_setup": {
+      "title": "Bank & Financial Account Setup",
+      "description": "We help businesses open and manage banking relationships across jurisdictions.",
+      "includes": {
+        "opening_accounts": "Opening corporate bank accounts in key financial centers",
+        "kyc_aml": "KYC/AML advisory and document preparation",
+        "correspondence_banking": "Correspondence banking and payment gateway setup",
+        "multi_currency": "Multi-currency account structuring"
+      }
+    },
+    "guarantees_solutions": {
+      "title": "Guarantees & Collateral Solutions",
+      "description": "We assist in obtaining bank guarantees and letters of credit for trade and projects.",
+      "includes": {
+        "bank_guarantees": "Bank guarantees (BG) and standby letters of credit (SBLC)",
+        "performance_bonds": "Performance and bid bonds for public and private contracts",
+        "monetization": "Monetization of existing guarantees or instruments",
+        "partnering_institutions": "Partnering with insurers and financial institutions"
+      }
+    },
+    "transaction_advisory": {
+      "title": "Transaction Advisory & Financial Structuring",
+      "description": "Full-scope transaction support from strategy to execution for complex deals.",
+      "includes": {
+        "deal_structuring": "Deal structuring and financial modeling",
+        "compliance_advisory": "Regulatory and tax compliance advisory",
+        "risk_analysis": "Risk analysis and sensitivity simulations",
+        "post_deal_support": "Post-deal integration or monitoring support"
+      }
+    },
+    "investor_representation": {
+      "title": "Investor Representation & Due Diligence",
+      "description": "We act as neutral intermediaries for investors in vetted African projects.",
+      "includes": {
+        "deal_screening": "Deal screening and project evaluation",
+        "due_diligence": "On-the-ground due diligence and site visits",
+        "risk_return": "Risk and return analysis",
+        "ongoing_reporting": "Ongoing reporting and compliance follow-up"
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "About TEIC Global",
+    "subtitle": "Trusted financial guidance across Africa with pan-African expertise and digital-first approach",
+    "history": {
+      "title": "Our History",
+      "content": {
+        "line1": "Founded in 2015, TEIC Global began as a boutique financial advisory firm focused on East African markets.",
+        "line2": "Through strategic partnerships and a commitment to digital innovation, we've expanded to serve 24 countries across the continent.",
+        "line3": "Our journey reflects Africa's economic growth, having facilitated over €250 million in investments and financial transactions."
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": {
+        "line1": "To democratize access to premium financial services across Africa through:",
+        "point1": "Local expertise with continental reach",
+        "point2": "Certified, ethical advisory",
+        "point3": "Technology-driven solutions",
+        "line2": "We bridge the gap between African enterprises and global capital markets."
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "Certified professionals with deep regional expertise",
+      "linkedin": "View Profile",
+      "members": {
+        "john_doe": {
+          "name": "John Doe",
+          "position": "Chief Executive Officer",
+          "bio": "15+ years in African capital markets. Former Director at major investment bank."
+        },
+        "jane_smith": {
+          "name": "Jane Smith",
+          "position": "Chief Financial Officer",
+          "bio": "Specializes in cross-border transactions. Chartered Financial Analyst."
+        },
+        "amina_bello": {
+          "name": "Amina Bello",
+          "position": "Senior Finance Advisor",
+          "bio": "Former Central Bank executive. Focus on Francophone markets."
+        }
+      }
     }
   }
 }

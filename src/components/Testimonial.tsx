@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { Quote } from "lucide-react";
 import { useTranslations } from "next-intl";

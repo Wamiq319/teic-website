@@ -1,6 +1,4 @@
-import HomePage from "./pages/home";
-
-import ContactPage from "./pages/contact";
+import HomePage from "./home/page";
 export default function Page() {
-  return <ContactPage />;
+  return <HomePage />;
 }
