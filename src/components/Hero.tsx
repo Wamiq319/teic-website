@@ -35,8 +35,10 @@ export const HeroSection = () => {
 
         {/* Headline with tighter spacing */}
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#2E2E2E] mb-4 leading-snug">
-          Trusted Financial Guidance <br className="hidden md:block" /> Across{" "}
-          <span className="text-[#7FC242]">Africa</span>
+          {t("headline1")} <br className="hidden md:block" />
+          {t("headline2")}
+          <span className="inline-block w-2" /> {/* Adds horizontal space */}
+          <span className="text-[#7FC242]">{t("headline3")}</span>
         </h1>
 
         {/* Subheadline with reduced margin */}
