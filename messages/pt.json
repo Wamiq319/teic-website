@@ -1,8 +1,8 @@
 {
   "HomePage": {
     "hero": {
-      "title": "Orientação Financeira Confiável em Toda a África",
-      "subtitle": "Aconselhamento jurídico e financeiro personalizado para projetos e empresas, otimização de investimentos, intermediação financeira",
+      "title": "TEIC Global",
+      "subtitle": "Orientação Financeira Confiável em Toda a África",
       "ctaEmail": "Receba Dicas Gratuitas por Email",
       "ctaCall": "Agende uma Consulta por Vídeo Gratuita",
       "headline1": "Orientação Financeira Confiável",
@@ -14,15 +14,18 @@
       "features": [
         {
           "title": "Expertise Pan-Africana",
-          "description": "Conhecimento local com alcance continental em mais de 20 mercados africanos"
+          "description": "Conhecimento local com alcance continental em mais de 20 mercados africanos",
+          "icon": "globe"
         },
         {
           "title": "Consultores Certificados",
-          "description": "Nossa equipe possui as mais altas certificações e licenças financeiras"
+          "description": "Nossa equipe possui as mais altas certificações e licenças financeiras",
+          "icon": "shield"
         },
         {
-          "title": "Abordagem Digital-First",
-          "description": "Tecnologia financeira de ponta para operações perfeitas"
+          "title": "Abordagem Digital",
+          "description": "Tecnologia financeira de ponta para operações perfeitas",
+          "icon": "cpu"
         }
       ]
     },
@@ -30,29 +33,34 @@
       "title": "Depoimentos de Clientes",
       "items": [
         {
-          "quote": "A orientação financeira da TEIC transformou nossa estratégia de expansão na África Oriental. Seu conhecimento local fez toda a diferença.",
+          "quote": "A orientação financeira da TEIC transformou nossa estratégia de expansão na África Oriental",
           "name": "James Mwangi",
-          "position": "CEO, GreenFarm Ltd"
+          "position": "CEO, GreenFarm Ltd",
+          "country": "ke"
         },
         {
-          "quote": "Os consultores financeiros mais confiáveis com quem já trabalhamos na Nigéria. Eles nos ajudaram a obter financiamento em 3 meses.",
+          "quote": "Os consultores financeiros mais confiáveis com quem já trabalhamos na Nigéria",
           "name": "Amina Yusuf",
-          "position": "Diretora Financeira, UrbanTech"
+          "position": "Finance Director, UrbanTech",
+          "country": "ng"
         },
         {
-          "quote": "Sua abordagem digital-first nos economizou 30% nos custos operacionais enquanto melhorava nossos relatórios financeiros.",
+          "quote": "Sua abordagem digital nos economizou 30% nos custos operacionais",
           "name": "Thabo Molefe",
-          "position": "Diretor de Operações, MineWorks SA"
+          "position": "COO, MineWorks SA",
+          "country": "za"
         },
         {
-          "quote": "Compreensão excepcional das regulamentações financeiras transfronteiriças. Eles navegaram por requisitos legais complexos com facilidade.",
+          "quote": "Compreensão excepcional das regulamentações financeiras transfronteiriças",
           "name": "Fatima Zahra",
-          "position": "Conselheira Jurídica, TransAfrica Group"
+          "position": "Legal Counsel, TransAfrica Group",
+          "country": "ma"
         },
         {
-          "quote": "Fundamentais para garantir nossa rodada de financiamento Série B. Sua rede de investidores é incomparável na África Ocidental.",
+          "quote": "Fundamentais para garantir nossa rodada de financiamento Série B",
           "name": "David Ofori",
-          "position": "Fundador, FinTech Ghana"
+          "position": "Founder, FinTech Ghana",
+          "country": "gh"
         }
       ]
     },
@@ -73,7 +81,12 @@
   "Footer": {
     "company": {
       "title": "TEIC Global",
-      "description": "Orientação financeira confiável em toda a África com expertise pan-africana e abordagem digital-first"
+      "description": "Orientação financeira confiável em toda a África com expertise pan-africana e abordagem digital"
+    },
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
     },
     "links": {
       "title": "Links Rápidos",
@@ -87,116 +100,163 @@
       "finance": "Finanças Corporativas e de Projetos",
       "debt": "Estruturação de Dívida",
       "escrow": "Serviços de Escrow",
-      "banking": "Abertura de Conta Bancária",
+      "banking": "Serviços Bancários",
       "guarantees": "Garantias e Colaterais",
       "advisory": "Consultoria em Transações",
-      "due_diligence": "Due Diligence para Investidores"
+      "due_diligence": "Due Diligence"
     },
     "contact": {
       "title": "Entre em Contato",
-      "address": "123 Distrito Financeiro, Cidade, País",
+      "address": "123 Financial District, City, Country",
       "phone": "+1 (234) 567-8900",
       "email": "info@teicglobal.com"
     },
     "language": "Mudar Idioma",
-    "copyright": "TEIC Global. Todos os direitos reservados."
+    "copyright": "TEIC Global. Todos os direitos reservados"
   },
   "ContactPage": {
     "title": "Entre em Contato",
-    "subtitle": "Estamos aqui para responder suas perguntas e discutir como podemos ajudar seu negócio a prosperar na África.",
+    "subtitle": "Estamos aqui para responder suas perguntas e discutir como podemos ajudar seu negócio a prosperar na África",
     "form": {
       "title": "Envie-nos uma mensagem",
-      "name": "Seu Nome",
-      "email": "Endereço de Email",
-      "message": "Sua Mensagem",
-      "button": "Enviar Mensagem"
+      "name": "Nome",
+      "email": "Email",
+      "message": "Mensagem",
+      "button": "Enviar"
     },
     "schedule": {
       "title": "Outras Formas de Contato",
       "subtitle": "Agendar uma Chamada",
-      "description": "Use nosso calendário para agendar uma consulta por vídeo gratuita de 30 minutos em um horário que funcione para você.",
-      "button": "Abrir Agendador",
+      "description": "Use nosso calendário para agendar uma consulta por vídeo gratuita de 30 minutos",
+      "button": "Agendar",
       "direct": "Ou contate diretamente:"
+    },
+    "social": {
+      "title": "Siga-nos",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
     }
   },
   "ServicesPage": {
     "title": "Serviços de Finanças Corporativas e de Projetos",
-    "subtitle": "Soluções personalizadas para navegar com confiança no cenário financeiro africano",
+    "subtitle": "Soluções personalizadas para o sucesso no mercado africano",
     "book_button": "Agendar Consulta",
     "cta": {
       "title": "Precisa de Soluções Financeiras Personalizadas?",
-      "description": "Nossa equipe está pronta para projetar serviços específicos para os requisitos do seu empreendimento africano",
-      "button": "Obter Aconselhamento Personalizado"
+      "description": "Nossa equipe está pronta para projetar serviços específicos para suas necessidades na África",
+      "button": "Obter Consultoria Personalizada"
     },
     "capital_raising": {
-      "title": "Captação de Capital e Matching de Investidores",
-      "description": "Ajudamos empresas a identificar e negociar com investidores adequados em toda a África e globalmente."
+      "title": "Captação de Capital",
+      "description": "Ajudamos empresas a identificar e negociar com investidores adequados",
+      "includes": {
+        "structuring_proposals": "Estruturação de propostas",
+        "sourcing_investors": "Busca de investidores",
+        "facilitating_partnerships": "Facilitação de parcerias",
+        "preparing_documentation": "Preparação de documentação"
+      }
     },
     "debt_structuring": {
-      "title": "Estruturação de Dívida e Facilitação de Financiamento",
-      "description": "Apoiamos empresas na obtenção de dívida através de bancos, DFIs e mercados de títulos com condições ideais."
+      "title": "Estruturação de Dívida",
+      "description": "Suporte para obtenção de financiamentos junto a bancos e instituições financeiras",
+      "includes": {
+        "loan_preparation": "Preparação de empréstimos",
+        "terms_negotiation": "Negociação de termos",
+        "finance_types": "Tipos de financiamento",
+        "debt_restructuring": "Reestruturação de dívida"
+      }
     },
     "escrow_services": {
-      "title": "Configuração de Conta Escrow e Mediação de Transações",
-      "description": "Serviços independentes de terceiros para garantir transações e proteger todas as partes."
+      "title": "Serviços de Escrow",
+      "description": "Serviços independentes de custódia para garantir transações",
+      "includes": {
+        "drafting_agreements": "Elaboração de contratos",
+        "coordinating_agents": "Coordenação de agentes",
+        "escrow_solutions": "Soluções de escrow"
+      }
     },
     "bank_account_setup": {
-      "title": "Abertura de Contas Bancárias e Financeiras",
-      "description": "Ajudamos empresas a abrir e gerenciar relacionamentos bancários em várias jurisdições."
+      "title": "Serviços Bancários",
+      "description": "Assistência para abertura e gestão de relacionamentos bancários",
+      "includes": {
+        "opening_accounts": "Abertura de contas",
+        "kyc_aml": "KYC/AML",
+        "correspondence_banking": "Bancos correspondentes",
+        "multi_currency": "Contas multi-moeda"
+      }
     },
     "guarantees_solutions": {
-      "title": "Soluções de Garantias e Colaterais",
-      "description": "Auxiliamos na obtenção de garantias bancárias e cartas de crédito para comércio e projetos."
+      "title": "Soluções de Garantias",
+      "description": "Serviços de garantias bancárias e cartas de crédito",
+      "includes": {
+        "bank_guarantees": "Garantias bancárias",
+        "performance_bonds": "Garantias de performance",
+        "monetization": "Monetização",
+        "partnering_institutions": "Parcerias institucionais"
+      }
     },
     "transaction_advisory": {
-      "title": "Consultoria em Transações e Estruturação Financeira",
-      "description": "Suporte completo em transações desde a estratégia até a execução para negócios complexos."
+      "title": "Consultoria em Transações",
+      "description": "Suporte completo para transações complexas",
+      "includes": {
+        "deal_structuring": "Estruturação de negócios",
+        "compliance_advisory": "Consultoria em compliance",
+        "risk_analysis": "Análise de riscos",
+        "post_deal_support": "Suporte pós-transação"
+      }
     },
     "investor_representation": {
-      "title": "Representação de Investidores e Due Diligence",
-      "description": "Atuamos como intermediários neutros para investidores em projetos africanos verificados."
+      "title": "Representação de Investidores",
+      "description": "Representação neutra para investidores em projetos africanos",
+      "includes": {
+        "deal_screening": "Análise de oportunidades",
+        "due_diligence": "Due diligence",
+        "risk_return": "Análise risco-retorno",
+        "ongoing_reporting": "Relatórios contínuos"
+      }
     }
   },
   "AboutPage": {
     "title": "Sobre a TEIC Global",
-    "subtitle": "Orientação financeira confiável em toda a África com expertise pan-africana e abordagem digital-first",
+    "subtitle": "Expertise financeira confiável na África",
     "history": {
       "title": "Nossa História",
       "content": {
-        "line1": "Fundada em 2015, a TEIC Global começou como uma boutique de consultoria financeira focada nos mercados da África Oriental.",
-        "line2": "Através de parcerias estratégicas e compromisso com a inovação digital, expandimos para atender 24 países no continente.",
-        "line3": "Nossa jornada reflete o crescimento econômico da África, tendo facilitado mais de €250 milhões em investimentos e transações financeiras."
+        "line1": "Fundada em 2015, a TEIC Global começou como boutique de consultoria financeira",
+        "line2": "Hoje atendemos 24 países na África",
+        "line3": "Facilitamos mais de 250 milhões de euros em investimentos"
       }
     },
     "mission": {
       "title": "Nossa Missão",
       "content": {
-        "line1": "Democratizar o acesso a serviços financeiros premium em toda a África através de:",
+        "line1": "Democratizar o acesso a serviços financeiros premium na África através de:",
         "point1": "Expertise local com alcance continental",
-        "point2": "Aconselhamento certificado e ético",
-        "point3": "Soluções orientadas por tecnologia",
-        "line2": "Fazemos a ponte entre empresas africanas e mercados de capitais globais."
+        "point2": "Consultoria certificada e ética",
+        "point3": "Soluções tecnológicas avançadas",
+        "line2": "Conectamos empresas africanas aos mercados financeiros globais"
       }
     },
     "team": {
-      "title": "Conheça Nossa Equipe",
-      "subtitle": "Profissionais certificados com profunda expertise regional",
+      "title": "Nossa Equipe",
+      "subtitle": "Especialistas certificados com profundo conhecimento regional",
       "linkedin": "Ver Perfil",
       "members": {
         "john_doe": {
           "name": "John Doe",
           "position": "Diretor Executivo",
-          "bio": "15+ anos em mercados de capitais africanos. Ex-diretor em grande banco de investimento."
+          "bio": "15+ anos de experiência em mercados africanos"
         },
         "jane_smith": {
           "name": "Jane Smith",
           "position": "Diretora Financeira",
-          "bio": "Especialista em transações transfronteiriças. Analista Financeira Certificada."
+          "bio": "Especialista em transações transfronteiriças"
         },
         "amina_bello": {
           "name": "Amina Bello",
           "position": "Consultora Financeira Sênior",
-          "bio": "Ex-executiva do Banco Central. Foco em mercados francófonos."
+          "bio": "Especialista em mercados francófonos"
         }
       }
     }

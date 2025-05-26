@@ -1,13 +1,24 @@
-// components/ContactScheduler.tsx
 "use client";
 
 import { useTranslations } from "next-intl";
 import { Calendar } from "lucide-react";
 import { CalendlyPopup } from "@/components/ui/CalendlyPopup";
+import { useState } from "react";
+import { getCalendlyUrl, CalendlyPageType } from "@/utils/calendly";
 
-export const ContactScheduler = () => {
+interface ContactSchedulerProps {
+  pageType?: CalendlyPageType;
+}
+
+export const ContactScheduler = ({ pageType = 'contact' }: ContactSchedulerProps) => {
   const t = useTranslations("ContactPage.schedule");
-  const CALENDLY_URL = "https://calendly.com";
+  const [isOpen, setIsOpen] = useState(false);
+  const CALENDLY_URL = getCalendlyUrl(pageType);
+
+  if (!CALENDLY_URL) {
+    console.warn('Calendly URL is not configured in environment variables');
+    return null;
+  }
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-sm border border-[#E0E0E0] space-y-6">
@@ -32,10 +43,17 @@ export const ContactScheduler = () => {
               Select a time that works for you
             </p>
 
+            <button
+              onClick={() => setIsOpen(true)}
+              className="w-full px-6 py-3 rounded-md bg-[#7FC242] hover:bg-[#5A7D2C] text-white font-medium transition-colors"
+            >
+              {t("button")}
+            </button>
+
             <CalendlyPopup
               url={CALENDLY_URL}
-              text={t("button")}
-              className="w-full px-6 py-3 rounded-md bg-[#7FC242] hover:bg-[#5A7D2C] text-white font-medium transition-colors"
+              isOpen={isOpen}
+              onClose={() => setIsOpen(false)}
               utm={{
                 utmSource: "website",
                 utmMedium: "contact_page",

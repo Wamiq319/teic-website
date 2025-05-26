@@ -4,7 +4,15 @@ import { Button } from "./ui/Button";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const HeroSection = () => {
+interface HeroSectionProps {
+  onEmailButtonClick: () => void;
+  onCallButtonClick: () => void;
+}
+
+export const HeroSection = ({
+  onEmailButtonClick,
+  onCallButtonClick,
+}: HeroSectionProps) => {
   const t = useTranslations("HomePage.hero");
 
   return (
@@ -50,7 +58,7 @@ export const HeroSection = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button
             variant="primary"
-            onClick={() => {}}
+            onClick={onEmailButtonClick}
             className="px-6 py-3 text-base md:text-lg"
           >
             {t("ctaEmail")}
@@ -58,7 +66,7 @@ export const HeroSection = () => {
 
           <Button
             variant="outline"
-            onClick={() => {}}
+            onClick={onCallButtonClick}
             className="px-6 py-3 text-base md:text-lg border-2"
           >
             {t("ctaCall")}

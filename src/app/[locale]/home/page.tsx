@@ -1,13 +1,14 @@
-// src/app/[locale]/pages/home.tsx
+"use client";
 
+import { useState } from "react";
 import { HeroSection } from "@/components/Hero";
 import { Card } from "@/components/ui/Card";
 import { Globe, ShieldCheck, Cpu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Testimonials from "@/components/Testimonial";
 import { EmailSignup } from "@/components/EmailSignup";
+import { CalendlyPopup } from "@/components/ui/CalendlyPopup";
 
-// Define the expected structure of a feature object
 type Feature = {
   title: string;
   description: string;
@@ -21,16 +22,28 @@ type WhyChooseUs = {
 export default function HomePage() {
   const t = useTranslations("HomePage");
   const whyChooseUs = t.raw("whyChooseUs") as WhyChooseUs;
-
+  const [isCalendlyOpen, setCalendlyOpen] = useState(false);
+  const CALENDLY_URL = "https://calendly.com/wamiqzahid139/30-min-teic-website";
   const icons = [
     <Globe size={32} key="globe" />,
     <ShieldCheck size={32} key="shield" />,
     <Cpu size={32} key="cpu" />,
   ];
 
+  // Scroll smoothly to EmailSignup section by id
+  const scrollToEmailSignup = () => {
+    const el = document.getElementById("email-signup");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main>
-      <HeroSection />
+      <HeroSection
+        onEmailButtonClick={scrollToEmailSignup}
+        onCallButtonClick={() => setCalendlyOpen(true)}
+      />
 
       {/* Why Choose Us Section */}
       <section className="py-12 md:py-16 bg-[#F8F8F8]">
@@ -57,6 +70,12 @@ export default function HomePage() {
 
       <Testimonials />
       <EmailSignup />
+
+      <CalendlyPopup
+        url={CALENDLY_URL}
+        isOpen={isCalendlyOpen}
+        onClose={() => setCalendlyOpen(false)}
+      />
     </main>
   );
 }

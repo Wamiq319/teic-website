@@ -3,8 +3,10 @@
 
 import { useTranslations } from "next-intl";
 import { CalendlyPopup } from "@/components/ui/CalendlyPopup";
+import { Button } from "@/components/ui/Button";
 import {
   ChevronRight,
+  ChevronLeft,
   Globe,
   Shield,
   Cpu,
@@ -13,16 +15,11 @@ import {
   Landmark,
   FileText,
 } from "lucide-react";
-import { ReactElement } from "react";
+import { ReactElement, useState } from "react";
+import { getCalendlyUrl, CalendlyServiceType } from "@/utils/calendly";
+import { useParams } from "next/navigation";
 
-type ServiceKey =
-  | "capital_raising"
-  | "debt_structuring"
-  | "escrow_services"
-  | "bank_account_setup"
-  | "guarantees_solutions"
-  | "transaction_advisory"
-  | "investor_representation";
+type ServiceKey = CalendlyServiceType;
 
 const serviceIcons: Record<ServiceKey, ReactElement> = {
   capital_raising: <Globe className="text-[#7FC242] h-6 w-6" />,
@@ -41,7 +38,11 @@ interface ServiceItem {
 
 export default function ServicesPage() {
   const t = useTranslations("ServicesPage");
-  const CALENDLY_URL = "https://calendly.com/yourusername";
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+  const [currentCalendlyUrl, setCurrentCalendlyUrl] = useState(getCalendlyUrl('default'));
+  const params = useParams();
+  const isRTL = params.locale === 'ar';
+  const ChevronIcon = isRTL ? ChevronLeft : ChevronRight;
 
   const services: ServiceItem[] = [
     {
@@ -108,9 +109,14 @@ export default function ServicesPage() {
     },
   ];
 
+  const handleServiceClick = (serviceKey: ServiceKey) => {
+    setCurrentCalendlyUrl(getCalendlyUrl(serviceKey));
+    setIsCalendlyOpen(true);
+  };
+
   return (
-    <section className="bg-[#F8F8F8] py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#F8F8F8] py-16" dir={isRTL ? 'rtl' : 'ltr'}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2E2E2E] mb-4">
@@ -129,11 +135,11 @@ export default function ServicesPage() {
               key={service.title}
               className="bg-white p-6 rounded-lg shadow-sm border border-[#E0E0E0] hover:shadow-md transition-all"
             >
-              <div className="flex items-start gap-4">
+              <div className={`flex items-start gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
                 <div className="p-2 bg-[#7FC242]/10 rounded-full">
                   {serviceIcons[service.title]}
                 </div>
-                <div>
+                <div className={`flex-1 ${isRTL ? 'text-right' : 'text-left'}`}>
                   <h3 className="text-xl font-bold text-[#2E2E2E] mb-2">
                     {t(`${service.title}.title`)}
                   </h3>
@@ -143,8 +149,8 @@ export default function ServicesPage() {
 
                   <ul className="space-y-2 mb-6">
                     {service.includes.map((item) => (
-                      <li key={item} className="flex items-start">
-                        <ChevronRight className="text-[#7FC242] h-4 w-4 mt-1 mr-2 flex-shrink-0" />
+                      <li key={item} className={`flex items-start ${isRTL ? 'flex-row-reverse' : ''}`}>
+                        <ChevronIcon className="text-[#7FC242] h-4 w-4 mt-1 mx-2 flex-shrink-0" />
                         <span className="text-[#666666]">
                           {t(`${service.title}.includes.${item}`)}
                         </span>
@@ -152,15 +158,13 @@ export default function ServicesPage() {
                     ))}
                   </ul>
 
-                  <CalendlyPopup
-                    url={CALENDLY_URL}
-                    text={t("book_button")}
-                    className="px-6 py-2 text-sm bg-[#7FC242] hover:bg-[#5A7D2C] text-white rounded-md"
-                    utm={{
-                      utmSource: "services_page",
-                      utmContent: service.title,
-                    }}
-                  />
+                  <Button
+                    onClick={() => handleServiceClick(service.title)}
+                    variant="primary"
+                    className="w-full px-6 py-3 text-base md:text-lg border-2"
+                  >
+                    {t("book_button")}
+                  </Button>
                 </div>
               </div>
             </div>
@@ -175,12 +179,25 @@ export default function ServicesPage() {
           <p className="text-[#666666] mb-6 max-w-2xl mx-auto">
             {t("cta.description")}
           </p>
-          <CalendlyPopup
-            url={CALENDLY_URL}
-            text={t("cta.button")}
-            className="px-8 py-3 bg-[#7FC242] hover:bg-[#5A7D2C] text-white font-medium rounded-md"
-          />
+
+          <Button
+            onClick={() => {
+              setCurrentCalendlyUrl(getCalendlyUrl('default'));
+              setIsCalendlyOpen(true);
+            }}
+            variant="outline"
+            className="px-6 py-3 text-base md:text-lg border-2"
+          >
+            {t("cta.button")}
+          </Button>
         </div>
+
+        {/* Calendly Popup - Single instance */}
+        <CalendlyPopup
+          url={currentCalendlyUrl}
+          isOpen={isCalendlyOpen}
+          onClose={() => setIsCalendlyOpen(false)}
+        />
       </div>
     </section>
   );
