@@ -5,6 +5,7 @@ import { Globe, Twitter, Linkedin, Facebook } from "lucide-react";
 
 export const Footer = () => {
   const t = useTranslations("Footer");
+  const c = useTranslations("contact");
   const currentYear = new Date().getFullYear();
 
   const socialIcons = {
@@ -96,11 +97,14 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">{t("contact.title")}</h3>
+            <h3 className="text-lg font-semibold mb-4">{c("title")}</h3>
             <address className="not-italic text-[#B3B3B3] space-y-2">
-              <p>{t("contact.address")}</p>
-              <p>{t("contact.phone")}</p>
-              <p>{t("contact.email")}</p>
+              <p>{c("address")}</p>
+              <p>{c("phone1")}</p>
+              <p>{c("phone2")}</p>
+              <p>{c("phone3")}</p>
+              <p>{c("phone4")}</p>
+              <p>{c("email")}</p>
               <div className="pt-2">
                 <Link
                   href="#"

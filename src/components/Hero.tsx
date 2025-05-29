@@ -1,19 +1,18 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "./ui/Button";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { EmailSignupModal } from "./EmailSignupModal";
 
 interface HeroSectionProps {
-  onEmailButtonClick: () => void;
   onCallButtonClick: () => void;
 }
 
-export const HeroSection = ({
-  onEmailButtonClick,
-  onCallButtonClick,
-}: HeroSectionProps) => {
+export const HeroSection = ({ onCallButtonClick }: HeroSectionProps) => {
   const t = useTranslations("HomePage.hero");
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
 
   return (
     <section className="relative h-[90vh] min-h-[600px] w-full bg-[#F8F8F8]">
@@ -36,7 +35,7 @@ export const HeroSection = ({
             alt="TEIC Global Logo"
             width={180}
             height={32}
-            className="w-full  h-auto "
+            className="w-full h-auto"
             priority
           />
         </div>
@@ -45,7 +44,7 @@ export const HeroSection = ({
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#2E2E2E] mb-4 leading-snug">
           {t("headline1")} <br className="hidden md:block" />
           {t("headline2")}
-          <span className="inline-block w-2" /> {/* Adds horizontal space */}
+          <span className="inline-block w-2" />
           <span className="text-[#7FC242]">{t("headline3")}</span>
         </h1>
 
@@ -55,10 +54,10 @@ export const HeroSection = ({
         </p>
 
         {/* CTAs with tighter spacing */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <Button
             variant="primary"
-            onClick={onEmailButtonClick}
+            onClick={() => setIsEmailModalOpen(true)}
             className="px-6 py-3 text-base md:text-lg"
           >
             {t("ctaEmail")}
@@ -73,6 +72,11 @@ export const HeroSection = ({
           </Button>
         </div>
       </div>
+
+      <EmailSignupModal
+        isOpen={isEmailModalOpen}
+        onClose={() => setIsEmailModalOpen(false)}
+      />
     </section>
   );
 };

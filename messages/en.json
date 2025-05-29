@@ -1,10 +1,10 @@
 {
   "HomePage": {
     "hero": {
-      "title": "Trusted Financial Guidance Across Africa.",
-      "subtitle": "Tailored legal and financial advices for projects and companies, optimize investments, financial intermediation.",
-      "ctaEmail": "Get Free Tips by Email",
-      "ctaCall": "Schedule a Free Video Consultation",
+      "title": "TEIC Global",
+      "subtitle": "Trusted Financial Guidance Across Africa",
+      "ctaEmail": "Get Free Email Tips",
+      "ctaCall": "Schedule Free Video Consultation",
       "headline1": "Trusted Financial Guidance",
       "headline2": "Across",
       "headline3": "Africa"
@@ -14,18 +14,15 @@
       "features": [
         {
           "title": "Pan-African Expertise",
-          "description": "Local knowledge with continental reach across 20+ African markets",
-          "icon": "globe"
+          "description": "Local knowledge with continental reach across 20+ African markets"
         },
         {
           "title": "Certified Advisors",
-          "description": "Our team holds top-tier financial certifications and licenses",
-          "icon": "shield"
+          "description": "Our team holds the highest financial certifications and licenses"
         },
         {
-          "title": "Digital-first Approach",
-          "description": "Cutting-edge financial technology for seamless operations",
-          "icon": "cpu"
+          "title": "Digital Approach",
+          "description": "Cutting-edge financial technology for seamless operations"
         }
       ]
     },
@@ -65,11 +62,23 @@
       ]
     },
     "emailSignup": {
-      "title": "Get our free e-book:",
-      "subtitle": "The Top 5 Mistakes Businesses Make in Africa",
-      "placeholder": "Your email address",
-      "button": "Get Free E-book",
-      "disclaimer": "Instant lead magnet delivery. We respect your privacy."
+      "title": "Get Your Free Guide",
+      "subtitle": "5 Mistakes African Investors Make",
+      "description": "Sign up to receive our exclusive guide on common investment mistakes and how to avoid them.",
+      "placeholder": "Enter your email address",
+      "button": "Get Free Guide",
+      "submitting": "Sending...",
+      "disclaimer": "We respect your privacy. Your information is safe and will never be shared.",
+      "success": {
+        "title": "Thank You!",
+        "message": "Your guide is ready to download.",
+        "download": "Download '5 Mistakes African Investors Make' PDF",
+        "close": "Close"
+      },
+      "error": {
+        "general": "Something went wrong. Please try again.",
+        "network": "Network error. Please check your connection."
+      }
     }
   },
   "nav": {
@@ -105,12 +114,7 @@
       "advisory": "Transaction Advisory",
       "due_diligence": "Investor Due Diligence"
     },
-    "contact": {
-      "title": "Contact Us",
-      "address": "123 Financial District, City, Country",
-      "phone": "+1 (234) 567-8900",
-      "email": "info@teicglobal.com"
-    },
+
     "language": "Change Language",
     "copyright": "TEIC Global. All rights reserved."
   },
@@ -243,7 +247,7 @@
       }
     },
     "team": {
-      "title": "Meet Our Team",
+      "title": "Meet Our Director",
       "subtitle": "Certified professionals with deep regional expertise",
       "linkedin": "View Profile",
       "members": {
@@ -264,5 +268,14 @@
         }
       }
     }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "PHCIE UNIVERSITE, BP 8126 Yaoundé, Cameroon",
+    "phone1": "+237 242 01 63 27",
+    "phone2": "+237 242 01 63 27",
+    "phone3": "+237 242 01 63 27",
+    "phone4": "+1 484 297 8880",
+    "email": "contact@teicglobal.com"
   }
 }

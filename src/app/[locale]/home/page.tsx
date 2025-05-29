@@ -6,9 +6,10 @@ import { Card } from "@/components/ui/Card";
 import { Globe, ShieldCheck, Cpu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Testimonials from "@/components/Testimonial";
-import { EmailSignup } from "@/components/EmailSignup";
 import { CalendlyPopup } from "@/components/ui/CalendlyPopup";
-
+import { EmailSignup
+  
+ } from "@/components/EmailSignup";
 type Feature = {
   title: string;
   description: string;
@@ -30,20 +31,9 @@ export default function HomePage() {
     <Cpu size={32} key="cpu" />,
   ];
 
-  // Scroll smoothly to EmailSignup section by id
-  const scrollToEmailSignup = () => {
-    const el = document.getElementById("email-signup");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <main>
-      <HeroSection
-        onEmailButtonClick={scrollToEmailSignup}
-        onCallButtonClick={() => setCalendlyOpen(true)}
-      />
+      <HeroSection onCallButtonClick={() => setCalendlyOpen(true)} />
 
       {/* Why Choose Us Section */}
       <section className="py-12 md:py-16 bg-[#F8F8F8]">

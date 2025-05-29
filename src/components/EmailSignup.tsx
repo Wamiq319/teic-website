@@ -1,10 +1,21 @@
 // components/EmailSignup.tsx
+import { useState } from "react";
 import { Input } from "./ui/Input";
 import { Button } from "./ui/Button";
 import { useTranslations } from "next-intl";
+import { EmailSignupModal } from "./EmailSignupModal";
 
 export const EmailSignup = () => {
   const t = useTranslations("HomePage.emailSignup");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) {
+      setIsModalOpen(true);
+    }
+  };
 
   return (
     <section
@@ -18,12 +29,14 @@ export const EmailSignup = () => {
           </h2>
         </div>
 
-        <form className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col sm:flex-row gap-4">
             <Input
               type="email"
               placeholder={t("placeholder")}
               name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
               className="w-10/12"
             />
@@ -40,6 +53,13 @@ export const EmailSignup = () => {
           </p>
         </form>
       </div>
+
+      <EmailSignupModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        initialEmail={email}
+        initialIsSubmitted={true}
+      />
     </section>
   );
 };
