@@ -2,7 +2,7 @@
   "HomePage": {
     "hero": {
       "title": "TEIC Global",
-      "subtitle": "Tailored legal and financial advices for projects and companies, optimize investments, financial intermediation",
+      "subtitle": "Tailored legal and financial advices for projects and companies, to optimize investments,& financial intermediation",
       "ctaEmail": "Get Free Email Tips",
       "ctaCall": "Schedule Free Video Consultation",
       "headline1": "Trusted Financial Guidance",
@@ -61,24 +61,10 @@
         }
       ]
     },
-    "emailSignup": {
+    "leadMagnet": {
       "title": "Get Your Free Guide",
       "subtitle": "5 Mistakes African Investors Make",
-      "description": "Sign up to receive our exclusive guide on common investment mistakes and how to avoid them.",
-      "placeholder": "Enter your email address",
-      "button": "Get Free Guide",
-      "submitting": "Sending...",
-      "disclaimer": "We respect your privacy. Your information is safe and will never be shared.",
-      "success": {
-        "title": "Thank You!",
-        "message": "Your guide is ready to download.",
-        "download": "Download '5 Mistakes African Investors Make' PDF",
-        "close": "Close"
-      },
-      "error": {
-        "general": "Something went wrong. Please try again.",
-        "network": "Network error. Please check your connection."
-      }
+      "description": "Sign up to receive our exclusive guide on common investment mistakes and how to avoid them."
     }
   },
   "nav": {
@@ -225,57 +211,75 @@
       }
     }
   },
+
   "AboutPage": {
-    "title": "About TEIC Global",
-    "subtitle": "Trusted financial guidance across Africa with pan-African expertise and digital-first approach",
-    "history": {
-      "title": "Our History",
-      "content": {
-        "line1": "Founded in 2015, TEIC Global began as a boutique financial advisory firm focused on East African markets.",
-        "line2": "Through strategic partnerships and a commitment to digital innovation, we've expanded to serve 24 countries across the continent.",
-        "line3": "Our journey reflects Africa's economic growth, having facilitated over €250 million in investments and financial transactions."
-      }
-    },
+    "title1": "Founded with Purpose",
+    "title2": "Driven by Possibility",
+
+    "subtitle": "TEIC GLOBAL was established in 2020 with a bold vision: to bridge the gap between African businesses and the world of sophisticated financial instruments. From bank guarantees to standby letters of credit and monetization services, we make it possible for small and mid-sized enterprises to access the tools that drive international growth. As a founder-led advisory, we are focused on guiding our clients through the complexities of global finance with clarity, transparency, and trust.",
     "mission": {
       "title": "Our Mission",
-      "content": {
-        "line1": "To democratize access to premium financial services across Africa through:",
-        "point1": "Local expertise with continental reach",
-        "point2": "Certified, ethical advisory",
-        "point3": "Technology-driven solutions",
-        "line2": "We bridge the gap between African enterprises and global capital markets."
-      }
+      "content": "To democratize access to global financial instruments for African businesses—making bank guarantees, SBLCs, and monetization solutions accessible, transparent, and growth-focused."
     },
-    "team": {
-      "title": "Meet Our Director",
-      "subtitle": "Certified professionals with deep regional expertise",
-      "linkedin": "View Profile",
-      "members": {
-        "john_doe": {
-          "name": "John Doe",
-          "position": "Chief Executive Officer",
-          "bio": "15+ years in African capital markets. Former Director at major investment bank."
-        },
-        "jane_smith": {
-          "name": "Jane Smith",
-          "position": "Chief Financial Officer",
-          "bio": "Specializes in cross-border transactions. Chartered Financial Analyst."
-        },
-        "amina_bello": {
-          "name": "Amina Bello",
-          "position": "Senior Finance Advisor",
-          "bio": "Former Central Bank executive. Focus on Francophone markets."
-        }
-      }
+
+    "vision": {
+      "title": "Our Vision",
+      "content": "To become Africa's most trusted gateway to global financial leverage—advising 1,000+ businesses by 2030 and supporting $100M+ in trade-backed growth."
+    },
+
+    "founder": {
+      "title": "Meet the Director",
+      "position": "Founder & Principal Consultant",
+      "bio1": "I'm a finance and trade advisory professional with a background in actuarial science and a deep understanding of trade risk, structured instruments, and capital markets.",
+      "bio2": "Over the past several years, I've immersed myself in the world of financial guarantees, SBLCs, and cross-border monetization strategies.",
+      "bio3": "I founded TEIC GLOBAL to support African businesses in accessing real financial power—without the noise, confusion, or gatekeeping that typically surrounds global finance.",
+      "contactButton": "Contact Steeve",
+      "linkedin": "LinkedIn Profile"
+    },
+
+    "trust": {
+      "title": "Why Trust Us?",
+      "registered": "Registered Since 2020",
+      "registeredDesc": "Established with a commitment to excellence",
+      "network": "Global Network Access",
+      "networkDesc": "Working with vetted financial providers in the UK, UAE, Asia, and Europe",
+      "expertise": "Continual Expertise Growth",
+      "expertiseDesc": "Active participant in ICC, ITFA, and trade finance programs",
+      "client": "Client-First Focus",
+      "clientDesc": "Built for SMEs, consultants, exporters, and business owners seeking real results"
+    },
+
+    "cta": {
+      "title": "Ready to Elevate Your Financial Strategy?",
+      "subtitle": "Whether you're exploring your first bank guarantee or want to monetize an instrument, we're ready to walk you through the process—step by step.",
+      "contactButton": "Contact Us",
+      "ebookButton": "Download Free eBook"
     }
   },
   "contact": {
     "title": "Contact Us",
-    "address": "PHCIE UNIVERSITE, BP 8126 Yaoundé, Cameroon",
-    "phone1": "+237 242 01 63 27",
-    "phone2": "+237 242 01 63 27",
-    "phone3": "+237 242 01 63 27",
-    "phone4": "+1 484 297 8880",
+    "address": "SIS PHCIE UNIVERSITE, Yaoundé, CENTRE, BP 8126, Cameroon",
+    "office": "+237 242 01 63 27",
+    "whatsapp": "+237 693 06 41 10",
+    "intl": "+1 484 297 8880",
     "email": "contact@teicglobal.com"
+  },
+  "EmailSignup": {
+    "title": "Get Free Ebook",
+    "placeholder": "Enter your email address",
+    "button": "Get Free Guide",
+    "submitting": "Sending...",
+    "disclaimer": "We respect your privacy. Your information is safe and will never be shared.",
+    "successModal": {
+      "title": "Thank You!",
+      "message": "Your guide is ready to download.",
+      "download": "Download '5 Mistakes African Investors Make' PDF",
+      "close": "Close"
+    }
+  },
+  "toastMessages": {
+    "emptyEmailError": "Please enter your email address",
+    "invalidEmailError": "Please enter a valid email address",
+    "failedSubmission": "Failed to submit. Please try again."
   }
 }

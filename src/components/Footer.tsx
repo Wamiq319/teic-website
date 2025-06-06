@@ -100,10 +100,9 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">{c("title")}</h3>
             <address className="not-italic text-[#B3B3B3] space-y-2">
               <p>{c("address")}</p>
-              <p>{c("phone1")}</p>
-              <p>{c("phone2")}</p>
-              <p>{c("phone3")}</p>
-              <p>{c("phone4")}</p>
+              <p>{c("office")}</p>
+              <p>{c("whatsapp")}</p>
+              <p>{c("intl")}</p>
               <p>{c("email")}</p>
               <div className="pt-2">
                 <Link

@@ -32,5 +32,9 @@ export const getCalendlyUrl = (
   };
 
   // Return the specific URL if it exists, otherwise fall back to default URL
-  return urls[page] || urls.default || "https://calendly.com/default";
+  return (
+    urls[page] ||
+    urls.default ||
+    "https://calendly.com/contact-teicglobal/free-video-consultation-teic-global"
+  );
 };

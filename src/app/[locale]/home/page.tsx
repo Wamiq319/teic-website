@@ -1,15 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import { HeroSection } from "@/components/Hero";
 import { Card } from "@/components/ui/Card";
 import { Globe, ShieldCheck, Cpu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Testimonials from "@/components/Testimonial";
 import { CalendlyPopup } from "@/components/ui/CalendlyPopup";
-import { EmailSignup
-  
- } from "@/components/EmailSignup";
+import { EmailSignup } from "@/components/EmailSignup";
+import { getCalendlyUrl } from "@/utils/calendly";
+import { useState } from "react";
+
 type Feature = {
   title: string;
   description: string;
@@ -24,7 +24,7 @@ export default function HomePage() {
   const t = useTranslations("HomePage");
   const whyChooseUs = t.raw("whyChooseUs") as WhyChooseUs;
   const [isCalendlyOpen, setCalendlyOpen] = useState(false);
-  const CALENDLY_URL = "https://calendly.com/wamiqzahid139/30-min-teic-website";
+  const CALENDLY_URL = getCalendlyUrl("homepage");
   const icons = [
     <Globe size={32} key="globe" />,
     <ShieldCheck size={32} key="shield" />,
@@ -59,7 +59,13 @@ export default function HomePage() {
       </section>
 
       <Testimonials />
-      <EmailSignup />
+
+      {/* Standalone Email Signup */}
+      <EmailSignup
+        variant="standalone"
+        title={t("leadMagnet.title")}
+        subtitle={t("leadMagnet.subtitle")}
+      />
 
       <CalendlyPopup
         url={CALENDLY_URL}

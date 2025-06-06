@@ -16,7 +16,7 @@ export const Button = ({
   children,
   variant = "primary",
   className = "",
-  onClick = () => alert(`Button clicked: ${children?.toString()}`),
+  onClick = () => {},
   type = "button",
   disabled = false,
   ...props

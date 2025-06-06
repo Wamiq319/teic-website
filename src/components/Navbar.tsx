@@ -8,8 +8,8 @@ import Image from "next/image";
 
 const NAV_ITEMS = [
   { path: "home", key: "home" },
-  { path: "about", key: "about" },
   { path: "services", key: "services" },
+  { path: "about", key: "about" },
   { path: "contact", key: "contact" },
 ] as const;
 

@@ -1,12 +1,12 @@
 "use client";
 
-// components/ContactForm.tsx
 import { useState } from "react";
 import { Input } from "./ui/Input";
 import { Button } from "./ui/Button";
 import { Textarea } from "./ui/Textarea";
 import { useTranslations } from "next-intl";
 import { Phone, MessageSquare } from "lucide-react";
+import { submitToGoogleSheets } from "@/utils/googleSheets";
 
 export const ContactForm = () => {
   const t = useTranslations("ContactPage.form");
@@ -21,22 +21,17 @@ export const ContactForm = () => {
 
     const formData = new FormData(e.currentTarget);
     const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      message: formData.get("message"),
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      message: formData.get("message") as string,
+      type: "contact_form" as const,
     };
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const result = await submitToGoogleSheets(data);
 
-      if (!response.ok) {
-        throw new Error("Failed to send message");
+      if (!result.success) {
+        throw new Error(result.message || "Failed to send message");
       }
 
       setStatus("success");
@@ -102,11 +97,12 @@ export const ContactForm = () => {
       <div className="space-y-1 mt-6">
         <div className="flex items-center gap-3 p-3 hover:bg-[#F8F8F8] rounded transition">
           <Phone className="text-[#7FC242] h-5 w-5" />
-          <span className="text-[#666666]">{c("phone1")}</span>
+          <span className="text-[#666666]">{c("mobile")}</span>
         </div>
         <div className="flex items-center gap-3 p-3 hover:bg-[#F8F8F8] rounded transition">
           <MessageSquare className="text-[#7FC242] h-5 w-5" />
-          <span className="text-[#666666]">{c("phone2")}</span>
+          <span className="text-[#666666]">{c("whatsapp")}</span>
+          <span className="text-[#666666]">{c("intl")}</span>
         </div>
       </div>
     </div>
