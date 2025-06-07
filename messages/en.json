@@ -278,6 +278,7 @@
     }
   },
   "toastMessages": {
+    "successSubmission": "Thanks for Contacting we will get you in touch and sending you",
     "emptyEmailError": "Please enter your email address",
     "invalidEmailError": "Please enter a valid email address",
     "failedSubmission": "Failed to submit. Please try again."

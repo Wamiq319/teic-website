@@ -1,8 +1,3 @@
-interface GoogleSheetsSubmitResponse {
-  success: boolean;
-  message?: string;
-}
-
 interface ContactFormData {
   name: string;
   email: string;
@@ -17,42 +12,43 @@ interface EmailSignupData {
 
 type SubmitData = ContactFormData | EmailSignupData;
 
+/**
+ * Submits data to Google Sheets without CORS issues
+ * @param data The data to submit
+ * @returns Promise<boolean> - true if successful, false if failed
+ */
 export const submitToGoogleSheets = async (
   data: SubmitData
-): Promise<GoogleSheetsSubmitResponse> => {
+): Promise<boolean> => {
   const APP_SCRIPT_URL = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
 
   if (!APP_SCRIPT_URL) {
     console.error("Google Script URL is not defined");
-    return {
-      success: false,
-      message: "Server configuration error - missing script URL",
-    };
+    return false;
   }
 
   try {
+    // Convert data to URLSearchParams format
+    const formData = new URLSearchParams();
+
+    // Add all properties from data to formData
+    Object.entries(data).forEach(([key, value]) => {
+      formData.append(key, value.toString());
+    });
+
     const response = await fetch(APP_SCRIPT_URL, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/x-www-form-urlencoded", // Critical for CORS
       },
-      body: JSON.stringify(data),
+      body: formData,
     });
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    return {
-      success: result.result === "success",
-      message: result.message,
-    };
+    // For basic verification - check if response text contains "Success"
+    const responseText = await response.text();
+    return responseText.includes("Success");
   } catch (error) {
-    console.error("Error submitting to Google Sheets:", error);
-    return {
-      success: false,
-      message: "Failed to submit data. Please try again later.",
-    };
+    console.error("Submission error:", error);
+    return false;
   }
 };

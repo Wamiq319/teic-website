@@ -83,16 +83,13 @@ export const EmailSignup = ({
         type: "email_signup",
       });
 
-      if (result.success) {
+      if (result) {
         setToast({
           show: true,
           message: e("successSubmission"),
           type: "success",
         });
         setIsSubmitted(true);
-        if (pdfLink) {
-          window.open(pdfLink, "_blank");
-        }
       } else {
         setToast({
           show: true,

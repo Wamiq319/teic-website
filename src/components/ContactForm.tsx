@@ -30,12 +30,13 @@ export const ContactForm = () => {
     try {
       const result = await submitToGoogleSheets(data);
 
-      if (!result.success) {
-        throw new Error(result.message || "Failed to send message");
+      if (result) {
+        setStatus("success");
+        e.currentTarget.reset();
+      } else {
+        setStatus("error");
+        e.currentTarget.reset();
       }
-
-      setStatus("success");
-      e.currentTarget.reset();
     } catch (error) {
       console.error("Error sending message:", error);
       setStatus("error");
