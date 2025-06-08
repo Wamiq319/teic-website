@@ -2,10 +2,10 @@
   "HomePage": {
     "hero": {
       "title": "TEIC Global",
-      "subtitle": "Msaada wa Kifedha Unaoweza Kuaminiwa Kote Afrika",
-      "ctaEmail": "Pata Vidokezo vya Bure kwa Barua Pepe",
+      "subtitle": "Mashauri ya kisheria na kifedha vilivyobinafsishwa kwa miradi na kampuni, kuimarisha uwekezaji, na uhamasishaji wa kifedha",
+      "ctaEmail": "Pata Mwongozo wa Bure",
       "ctaCall": "Panga Mashauriano ya Video ya Bure",
-      "headline1": "Mwongozo wa Kifedha Unaotegemewa",
+      "headline1": "Mshauri wa Kifedha Anayetegemewa",
       "headline2": "Kote",
       "headline3": "Afrika"
     },
@@ -14,62 +14,57 @@
       "features": [
         {
           "title": "Utaalam wa Pan-Afrika",
-          "description": "Ujuzi wa ndani na ufikiaji wa bara katika soko zaidi ya 20 za Kiafrika",
-          "icon": "globe"
+          "description": "Ujuzi wa ndani na ufikiaji wa bara katika soko zaidi ya 20 za Kiafrika"
         },
         {
-          "title": "Mashauri wenye Vyeti",
-          "description": "Timu yetu ina vyeti na leseni za juu za kifedha",
-          "icon": "shield"
+          "title": "Mashauri Waliosajiliwa",
+          "description": "Timu yetu ina vyeti na leseni za juu zaidi za kifedha"
         },
         {
           "title": "Mbinu ya Kidijitali",
-          "description": "Teknolojia ya kisasa ya kifedha kwa operesheni zinazofanikiwa",
-          "icon": "cpu"
+          "description": "Teknolojia ya kisasa ya kifedha kwa shughuli zinazoendelea vizuri"
         }
       ]
     },
     "testimonials": {
-      "title": "Ushuhuda wa Wateja",
+      "title": "Uthibitisho wa Wateja",
       "items": [
         {
-          "quote": "Mwelekezo wa kifedha wa TEIC ulibadilisha mkakati wetu wa kupanuka Afrika Mashariki",
+          "quote": "Mshauri wa kifedha wa TEIC ulibadilisha mkakati wetu wa kupanuka kote Afrika Mashariki. Ujuzi wao wa ndani ulifanya tofauti.",
           "name": "James Mwangi",
-          "position": "CEO, GreenFarm Ltd",
+          "position": "Mkurugenzi Mtendaji, GreenFarm Ltd",
           "country": "ke"
         },
         {
-          "quote": "Mashauri wa kifedha wa kuaminika zaidi tuliyowahi kufanya kazi nao Nigeria",
+          "quote": "Mashauri wa kifedha wa kuaminika zaidi tuliyowahi kufanya kazi nao Nigeria. Walitusaidia kupata fedha ndani ya miezi 3.",
           "name": "Amina Yusuf",
-          "position": "Finance Director, UrbanTech",
+          "position": "Mkurugenzi wa Fedha, UrbanTech",
           "country": "ng"
         },
         {
-          "quote": "Mbinu yao ya kidijitali ilituokoa gharama za uendeshaji kwa 30%",
+          "quote": "Mbinu yao ya kwanza dijitali ilituokoa 30% katika gharama za uendeshaji huku ikiboresha ripoti zetu za kifedha.",
           "name": "Thabo Molefe",
-          "position": "COO, MineWorks SA",
+          "position": "Mkurugenzi wa Uendeshaji, MineWorks SA",
           "country": "za"
         },
         {
-          "quote": "Uelewa wa kipekee wa sheria za kifedha za mpaka",
+          "quote": "Uelewa wa kipekee wa sheria za kifedha za njia ya pande zote. Walipita mahitaji magumu ya kisheria kwa urahisi.",
           "name": "Fatima Zahra",
-          "position": "Legal Counsel, TransAfrica Group",
+          "position": "Mshauri wa Kisheria, Kikundi cha TransAfrica",
           "country": "ma"
         },
         {
-          "quote": "Muhimu katika kupata ufadhili wetu wa Series B",
+          "quote": "Muhimu katika kupata mzunguko wetu wa uwekezaji wa Series B. Mtandao wao wa wawekezaji hauna kifani Afrika Magharibi.",
           "name": "David Ofori",
-          "position": "Founder, FinTech Ghana",
+          "position": "Mwanzilishi, FinTech Ghana",
           "country": "gh"
         }
       ]
     },
-    "emailSignup": {
-      "title": "Pata kitabu chetu cha bure:",
-      "subtitle": "Makosa 5 Makuu Yanayofanywa na Biashara nchini Afrika",
-      "placeholder": "Anwani yako ya barua pepe",
-      "button": "Pata Kitabu cha Bure",
-      "disclaimer": "Uwasilishaji wa papo hapo. Tunaheshimu faragha yako."
+    "leadMagnet": {
+      "title": "Pata Vidokezo vya Barua Pepe Bure",
+      "subtitle": "Makosa 5 Yanayofanywa na Wawekezaji wa Kiafrika",
+      "description": "Jisajili kupokea mwongozo wetu wa kipekee kuhusu makosa ya kawaida ya uwekezaji na jinsi ya kuyakwepa."
     }
   },
   "nav": {
@@ -81,7 +76,7 @@
   "Footer": {
     "company": {
       "title": "TEIC Global",
-      "description": "Msaada wa kifedha unaoweza kuaminiwa kote Afrika na utaalam wa Pan-Afrika na mbinu ya kidijitali"
+      "description": "Mshauri wa kifedha anayetegemewa kote Afrika na utaalam wa Pan-Afrika na mbinu ya kwanza dijitali."
     },
     "social": {
       "twitter": "Twitter",
@@ -97,38 +92,33 @@
     },
     "services": {
       "title": "Huduma Zetu",
-      "finance": "Fedha ya Kampuni na Miradi",
-      "debt": "Mpangilio wa Deni",
+      "finance": "Fedha za Kampuni & Miradi",
+      "debt": "Muundo wa Deni",
       "escrow": "Huduma za Escrow",
-      "banking": "Huduma za Benki",
+      "banking": "Kuanzisha Akaunti ya Benki",
       "guarantees": "Dhamana na Collateral",
-      "advisory": "Ushauri wa Miamala",
-      "due_diligence": "Uchunguzi wa Kina"
-    },
-    "contact": {
-      "title": "Wasiliana Nasi",
-      "address": "123 Financial District, City, Country",
-      "phone": "+1 (234) 567-8900",
-      "email": "info@teicglobal.com"
+      "advisory": "Ushauri wa Shughuli",
+      "due_diligence": "Uchunguzi wa Wawekezaji"
     },
     "language": "Badilisha Lugha",
-    "copyright": "TEIC Global. Haki zote zimehifadhiwa"
+    "copyright": "TEIC Global. Haki zote zimehifadhiwa."
   },
   "ContactPage": {
     "title": "Wasiliana Nasi",
-    "subtitle": "Tuko hapa kujibu maswali yako na kujadili jinsi tunaweza kusaidia biashara yako kufanikiwa Afrika",
+    "subtitle": "Tuko hapa kujibu maswali yako na kujadili jinsi tunaweza kusaidia biashara yako kufanikiwa Afrika.",
     "form": {
-      "title": "Tutumie Ujumbe",
-      "name": "Jina",
-      "email": "Barua pepe",
-      "message": "Ujumbe",
-      "button": "Tuma"
+      "title": "Tutumie ujumbe",
+      "name": "Jina Lako",
+      "email": "Barua Pepe",
+      "message": "Ujumbe Wako",
+      "button": "Tuma Ujumbe",
+      "sending": "Inatumwa..."
     },
     "schedule": {
       "title": "Njia Zingine za Kuwasiliana",
       "subtitle": "Panga Simu",
-      "description": "Tumia kalenda yetu kupanga mashauriano ya video ya dakika 30",
-      "button": "Panga",
+      "description": "Tumia kalenda yetu kupanga mashauriano ya video ya bure ya dakika 30 kwa wakati unaokufaa.",
+      "button": "Fungua Mpangilio",
       "direct": "Au wasiliana moja kwa moja:"
     },
     "social": {
@@ -136,129 +126,159 @@
       "twitter": "Twitter",
       "linkedin": "LinkedIn",
       "facebook": "Facebook"
+    },
+    "map": {
+      "title": "Ofisi Yetu",
+      "address": "123 Wilaya ya Fedha, Jiji, Nchi"
     }
   },
   "ServicesPage": {
-    "title": "Huduma za Fedha za Kampuni na Miradi",
-    "subtitle": "Suluhisho maalum kwa mafanikio katika soko la Afrika",
-    "book_button": "Panga Mashauriano",
+    "title": "Huduma za Fedha za Kampuni & Miradi",
+    "subtitle": "Suluhisho zilizobinafsishwa kwa kusafiri katika mazingira ya kifedha ya Afrika kwa ujasiri",
+    "book_button": "Hudhuria Mashauriano",
     "cta": {
-      "title": "Unahitaji Suluhisho Maalum za Kifedha?",
-      "description": "Timu yetu iko tayari kubuni huduma maalum kwa mahitaji yako Afrika",
+      "title": "Unahitaji Suluhisho za Kifedha Zilizobinafsishwa?",
+      "description": "Timu yetu iko tayari kubuni huduma maalum kwa mahitaji ya biashara yako ya Kiafrika",
       "button": "Pata Ushauri Maalum"
     },
     "capital_raising": {
-      "title": "Kupata Mtaji",
-      "description": "Tunasaidia kampuni kutambua na kujadiliana na wawekezaji wafaa",
+      "title": "Kukusanya Mtaji & Kufanana kwa Wawekezaji",
+      "description": "Tunasaidia kampuni kutambua na kujadiliana na wawekezaji wanafaa kote Afrika na kimataifa.",
       "includes": {
-        "structuring_proposals": "Kuunda mapendekezo",
-        "sourcing_investors": "Kutafuta wawekezaji",
-        "facilitating_partnerships": "Kuwezesha ushirika",
-        "preparing_documentation": "Kuandaa nyaraka"
+        "structuring_proposals": "Kuunda maagizo ya uwekezaji na vile vile vifaa vya kutoa maelezo",
+        "sourcing_investors": "Kupata mtaji wa uwekezaji, mtaji wa hatari, au wawekezaji wa taasisi",
+        "facilitating_partnerships": "Kurahisisha miradi ya pamoja na ushirikiano wa kimkakati",
+        "preparing_documentation": "Kuandaa vyumba vya data na nyaraka za uchunguzi wa kutosha"
       }
     },
     "debt_structuring": {
-      "title": "Mpangilio wa Deni",
-      "description": "Msaada wa kupata fedha kutoka benki na taasisi za kifedha",
+      "title": "Muundo wa Deni & Urahisishaji wa Fedha",
+      "description": "Tunasaidia kampuni katika kukusanya deni kupitia benki, DFIs, na soko za dhamana kwa masharti bora.",
       "includes": {
-        "loan_preparation": "Maandalizi ya mikopo",
-        "terms_negotiation": "Majadiliano ya masharti",
-        "finance_types": "Aina za ufadhili",
-        "debt_restructuring": "Mpangilio mpya wa deni"
+        "loan_preparation": "Maandalizi ya maombi ya mkopo na mipango ya biashara",
+        "terms_negotiation": "Majadiliano ya masharti na hali ya mkopo",
+        "finance_types": "Fedha za daraja, fedha za biashara, na mikopo iliyofungwa kwa mali",
+        "debt_restructuring": "Kuunda upya na kufadhili tena deni lililopo"
       }
     },
     "escrow_services": {
-      "title": "Huduma za Escrow",
-      "description": "Huduma huru za udhamini kwa miamala",
+      "title": "Kuanzisha Akaunti ya Escrow & Upatanishi wa Shughuli",
+      "description": "Huduma za escrow za mtu wa tatu huru kuhakikisha shughuli na kulinda pande zote.",
       "includes": {
-        "drafting_agreements": "Kuandaa mikataba",
-        "coordinating_agents": "Kuratibu mawakala",
-        "escrow_solutions": "Suluhisho za escrow"
+        "drafting_agreements": "Kuandaa na kusimamia makubaliano ya escrow",
+        "coordinating_agents": "Kuratibu na benki za escrow zilizoidhinishwa au mawakili wa kuaminika",
+        "escrow_solutions": "Suluhisho za escrow kwa mali isiyohamishika, biashara ya kuagiza nje, miradi ya pamoja, na leseni za IP"
       }
     },
     "bank_account_setup": {
-      "title": "Huduma za Benki",
-      "description": "Msaada wa kufungua na kusimamia uhusiano wa kibenki",
+      "title": "Kuanzisha Akaunti ya Benki & Fedha",
+      "description": "Tunasaidia biashara kufungua na kusimamia uhusiano wa benki katika mamlaka mbalimbali.",
       "includes": {
-        "opening_accounts": "Kufungua akaunti",
-        "kyc_aml": "KYC/AML",
-        "correspondence_banking": "Benki washirika",
-        "multi_currency": "Akaunti za sarafu nyingi"
+        "opening_accounts": "Kufungua akaunti za benki za kampuni katika vituo muhimu vya kifedha",
+        "kyc_aml": "Ushauri wa KYC/AML na maandalizi ya nyaraka",
+        "correspondence_banking": "Benki za mawasiliano na usanidi wa lango la malipo",
+        "multi_currency": "Muundo wa akaunti za sarafu nyingi"
       }
     },
     "guarantees_solutions": {
-      "title": "Suluhisho za Dhamana",
-      "description": "Huduma za dhamana za benki na barua za mkopo",
+      "title": "Suluhisho za Dhamana na Collateral",
+      "description": "Tunasaidia kupata dhamana za benki na barua za mikopo kwa biashara na miradi.",
       "includes": {
-        "bank_guarantees": "Dhamana za benki",
-        "performance_bonds": "Dhamana za utendaji",
-        "monetization": "Ubadilishaji fedha",
-        "partnering_institutions": "Ushirika wa kitaasisi"
+        "bank_guarantees": "Dhamana za benki (BG) na barua za mikopo za kusubiri (SBLC)",
+        "performance_bonds": "Dhamana za utendaji na dhamana za zabuni kwa mikataba ya umma na binafsi",
+        "monetization": "Kufanya pesa kwa dhamana au vyombo vilivyopo",
+        "partnering_institutions": "Kushirikiana na makampuni ya bima na taasisi za kifedha"
       }
     },
     "transaction_advisory": {
-      "title": "Ushauri wa Miamala",
-      "description": "Msaada kamili kwa miamala ngumu",
+      "title": "Ushauri wa Shughuli & Muundo wa Fedha",
+      "description": "Msaada kamili wa shughuli kutoka kwa mkakati hadi utekelezaji kwa mikataba ngumu.",
       "includes": {
-        "deal_structuring": "Kuunda miamala",
-        "compliance_advisory": "Ushauri wa utiifu",
-        "risk_analysis": "Uchambuzi wa hatari",
-        "post_deal_support": "Msaada baada ya mwamala"
+        "deal_structuring": "Muundo wa mikataba na mifano ya kifedha",
+        "compliance_advisory": "Ushauri wa kufuata sheria na ushuru",
+        "risk_analysis": "Uchambuzi wa hatari na uigizaji wa urahisi",
+        "post_deal_support": "Msaada baada ya mkataba au ufuatiliaji wa kufuata sheria"
       }
     },
     "investor_representation": {
-      "title": "Uwakilishi wa Wawekezaji",
-      "description": "Uwakilishi huru kwa wawekezaji katika miradi ya Afrika",
+      "title": "Uwakilishi wa Wawekezaji & Uchunguzi wa Kutosha",
+      "description": "Tunatenda kama wapatanishi wasio na upendeleo kwa wawekezaji katika miradi ya Kiafrika iliyothibitishwa.",
       "includes": {
-        "deal_screening": "Uchunguzi wa miamala",
-        "due_diligence": "Uchunguzi wa kina",
-        "risk_return": "Uchambuzi wa hatari-faida",
-        "ongoing_reporting": "Ripoti endelevu"
+        "deal_screening": "Kuchunguza mikataba na tathmini ya miradi",
+        "due_diligence": "Uchunguzi wa kutosha wa shambani na ziara",
+        "risk_return": "Uchambuzi wa hatari na kurudi",
+        "ongoing_reporting": "Ripoti za kuendelea na ufuatiliaji wa kufuata sheria"
       }
     }
   },
   "AboutPage": {
-    "title": "Kuhusu TEIC Global",
-    "subtitle": "Utaalam wa kifedha unaoaminika Afrika",
-    "history": {
-      "title": "Historia Yetu",
-      "content": {
-        "line1": "Ilianzishwa 2015, TEIC Global ilianza kama kampuni ya ushauri wa kifedha",
-        "line2": "Leo tunahudumia nchi 24 Afrika",
-        "line3": "Tumewezesha zaidi ya euro milioni 250 za uwekezaji"
-      }
-    },
+    "title1": "Iliyoanzishwa kwa Kusudi",
+    "title2": "Inaendeshwa na Uwezekano",
+    "subtitle": "TEIC GLOBAL ilianzishwa mwaka 2020 na dhamira thabiti: kufunga pengo kati ya biashara za Kiafrika na ulimwengu wa vyombo vya kifedha vilivyoendelea. Kutoka kwa dhamana za benki hadi barua za mikopo za kusubiri na huduma za kufanya pesa, tunafanya iwezekanavyo kwa wafanyabiashara wadogo na wa kati kupata zana zinazochochea ukuaji wa kimataifa. Kama ushauri unaoongozwa na mwanzilishi, tunalenga kwa kuwaelekeza wateja wetu kupitia utata wa fedha za kimataifa kwa uwazi, uwazi, na uaminifu.",
     "mission": {
       "title": "Dhamira Yetu",
-      "content": {
-        "line1": "Kurahisisha upatikanaji wa huduma bora za kifedha Afrika kupitia:",
-        "point1": "Utaalam wa ndani na ufikiaji wa bara",
-        "point2": "Ushauri wenye vyeti na maadili",
-        "point3": "Suluhisho za teknolojia za kisasa",
-        "line2": "Tunaunganisha biashara za Afrika na masoko ya kifedha ya kimataifa"
-      }
+      "content": "Kuleta ufikiaji wa vyombo vya kifedha vya kimataifa kwa biashara za Kiafrika - kufanya dhamana za benki, SBLC, na suluhisho za kufanya pesa zinapatikana, wazi, na zinalenga ukuaji."
     },
-    "team": {
-      "title": "Timu Yetu",
-      "subtitle": "Wataalamu wenye vyeti na ujuzi wa kina wa kikanda",
-      "linkedin": "Tazama Wasifu",
-      "members": {
-        "john_doe": {
-          "name": "John Doe",
-          "position": "Mkurugenzi Mtendaji",
-          "bio": "Uzoefu wa miaka 15+ katika masoko ya Afrika"
-        },
-        "jane_smith": {
-          "name": "Jane Smith",
-          "position": "Mkurugenzi wa Fedha",
-          "bio": "Mtaalam wa miamala ya kimataifa"
-        },
-        "amina_bello": {
-          "name": "Amina Bello",
-          "position": "Mshauri Mkuu wa Fedha",
-          "bio": "Mtaalam wa masoko ya Kifaransa"
-        }
-      }
+    "vision": {
+      "title": "Dira Yetu",
+      "content": "Kuwa lango la kuaminika zaidi la Afrika kwa kiwango cha kifedha cha kimataifa - kutoa ushauri kwa biashara 1000+ kufikia 2030 na kusaidia ukuaji wa $100M+ unaotegemea biashara."
+    },
+    "founder": {
+      "title": "Kutana na Mkurugenzi",
+      "position": "Mwanzilishi & Mshauri Mkuu",
+      "bio1": "Mimi ni mtaalamu wa ushauri wa fedha na biashara na mazingira ya sayansi ya hati miliki na uelewa wa kina wa hatari ya biashara, vyombo vilivyowekwa mpangilio, na soko za mtaji.",
+      "bio2": "Kwa miaka kadhaa iliyopita, nimejikita katika ulimwengu wa dhamana za kifedha, SBLC, na mikakati ya kufanya pesa ya njia ya pande zote.",
+      "bio3": "Nilianzisha TEIC GLOBAL kusaidia biashara za Kiafrika katika kupata nguvu halisi ya kifedha - bila kelele, machafuko, au kizuizi ambacho kawaida huzunguka fedha za kimataifa.",
+      "contactButton": "Wasiliana na Steeve",
+      "linkedin": "Wasifu wa LinkedIn"
+    },
+    "trust": {
+      "title": "Kwa Nini Kutuamini?",
+      "registered": "Imeandikishwa Tangu 2020",
+      "registeredDesc": "Imeanzishwa kwa kujitolea kwa ubora",
+      "network": "Ufikiaji wa Mtandao wa Kimataifa",
+      "networkDesc": "Kufanya kazi na watoa huduma wa kifedha waliochunguzwa Uingereza, UAE, Asia, na Ulaya",
+      "expertise": "Ukuaji wa Utaalamu wa Kuendelea",
+      "expertiseDesc": "Mshiriki aktivu katika ICC, ITFA, na mipango ya fedha ya biashara",
+      "client": "Mteja Kwanza",
+      "clientDesc": "Imejengwa kwa Wafanyabiashara Wadogo na Wa kati, mashauri, waagizaji nje, na wamiliki wa biashara wanaotafuta matokeo halisi"
+    },
+    "cta": {
+      "title": "Uko Tayari Kuinua Mkakati Wako wa Fedha?",
+      "subtitle": "Iwe unachunguza dhamana yako ya kwanza ya benki au unataka kufanya pesa kwa chombo, tuko tayari kukupa mwongozo kupitia mchakato - hatua kwa hatua.",
+      "contactButton": "Wasiliana Nasi",
+      "ebookButton": "Pakua eBook ya Bure"
     }
+  },
+  "contact": {
+    "WhatsApp": "WhatsApp",
+    "Email": "Barua Pepe",
+    "Address": "Anwani",
+    "title": "Wasiliana Nasi",
+    "address": "SIS PHCIE UNIVERSITE, Yaoundé, CENTRE, BP 8126, Kamerun",
+    "office": "+237 242 01 63 27",
+    "whatsapp": "+237 693 06 41 10",
+    "intl": "+1 484 297 8880",
+    "email": "contact@teicglobal.com"
+  },
+  "EmailSignup": {
+    "title": "Pata eBook ya Bure",
+    "placeholder": "Weka anwani yako ya barua pepe",
+    "button": "Pata Mwongozo wa Bure",
+    "leadbutton": "Pata Vidokezo vya Barua Pepe",
+    "submitting": "Inatumwa...",
+    "disclaimer": "Tunaheshimu faragha yako. Maelezo yako yako salama na hayatagawanyika kamwe.",
+    "successModal": {
+      "title": "Asante!",
+      "message": "Mwongozo wako uko tayari kupakuliwa.",
+      "download": "Pakua 'Makosa 5 Yanayofanywa na Wawekezaji wa Kiafrika' PDF",
+      "close": "Funga"
+    }
+  },
+  "toastMessages": {
+    "successSubmission": "Asante kwa kuwasiliana tutawasiliana nawe hivi karibuni",
+    "emptyEmailError": "Tafadhali weka anwani yako ya barua pepe",
+    "invalidEmailError": "Tafadhali weka anwani halali ya barua pepe",
+    "failedSubmission": "Imeshindwa kutuma. Tafadhali jaribu tena."
   }
 }

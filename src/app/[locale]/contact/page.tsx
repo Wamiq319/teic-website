@@ -35,10 +35,12 @@ export default function ContactPage() {
           <h3 className="text-2xl font-bold text-[#2E2E2E] mb-4">
             {t("map.title")}
           </h3>
-          <p className="text-[#666666] mb-4">{t("map.address")}</p>
+          <p className="text-[#666666] mb-4">
+            SIS PHC IIE UNIVERSITE, Yaoundé, CENTRE, BP 8126, Cameroon
+          </p>
           <div className="h-96 rounded-md overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018717!2d-73.9878446845938!3d40.74844087932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTEuMiJX!5e0!3m2!1sen!2sus!4v1623861234567!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.621085755985!2d11.513510414757853!3d3.868826397070722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bc3a6d5e4c3f1%3A0x3f4a3f4a3f4a3f4a!2sSIS%20PHC%20IIE%20UNIVERSITE%2C%20Yaound%C3%A9%2C%20CENTRE%2C%20BP%208126%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1623861234567!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{
@@ -48,6 +50,7 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               className="dark:invert-[90%]"
+              title="Location of SIS PHC IIE UNIVERSITE"
             ></iframe>
           </div>
         </div>

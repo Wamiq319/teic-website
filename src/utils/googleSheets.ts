@@ -46,6 +46,7 @@ export const submitToGoogleSheets = async (
 
     // For basic verification - check if response text contains "Success"
     const responseText = await response.text();
+    console.log(responseText);
     return responseText.includes("Success");
   } catch (error) {
     console.error("Submission error:", error);

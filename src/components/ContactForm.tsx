@@ -5,14 +5,16 @@ import { Input } from "./ui/Input";
 import { Button } from "./ui/Button";
 import { Textarea } from "./ui/Textarea";
 import { useTranslations } from "next-intl";
-import { Phone, MessageSquare } from "lucide-react";
+import { Phone, MessageSquare, Mail, MapPin } from "lucide-react";
 import { submitToGoogleSheets } from "@/utils/googleSheets";
 
 export const ContactForm = () => {
   const t = useTranslations("ContactPage.form");
   const c = useTranslations("contact");
+  const m = useTranslations("toastMessages");
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [formKey, setFormKey] = useState(0);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,10 +34,9 @@ export const ContactForm = () => {
 
       if (result) {
         setStatus("success");
-        e.currentTarget.reset();
+        setFormKey((prevKey) => prevKey + 1); // Change the key to reset the form
       } else {
         setStatus("error");
-        e.currentTarget.reset();
       }
     } catch (error) {
       console.error("Error sending message:", error);
@@ -51,17 +52,17 @@ export const ContactForm = () => {
 
       {status === "success" && (
         <div className="mb-4 p-4 bg-green-50 text-green-700 rounded-md">
-          {t("success")}
+          {m("successSubmission")}
         </div>
       )}
 
       {status === "error" && (
         <div className="mb-4 p-4 bg-red-50 text-red-700 rounded-md">
-          {t("error")}
+          {m("failedSubmission")}
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form key={formKey} onSubmit={handleSubmit} className="space-y-4">
         <Input
           label={t("name")}
           name="name"
@@ -95,15 +96,41 @@ export const ContactForm = () => {
         </Button>
       </form>
 
-      <div className="space-y-1 mt-6">
-        <div className="flex items-center gap-3 p-3 hover:bg-[#F8F8F8] rounded transition">
-          <Phone className="text-[#7FC242] h-5 w-5" />
-          <span className="text-[#666666]">{c("mobile")}</span>
+      <div className="flex items-center gap-4 p-3 hover:bg-[#F8F8F8] rounded-lg transition-all duration-200 cursor-pointer">
+        <div className="p-2 bg-[#25D366]/10 rounded-full">
+          <MessageSquare className="text-[#25D366] h-5 w-5" />
         </div>
-        <div className="flex items-center gap-3 p-3 hover:bg-[#F8F8F8] rounded transition">
-          <MessageSquare className="text-[#7FC242] h-5 w-5" />
-          <span className="text-[#666666]">{c("whatsapp")}</span>
-          <span className="text-[#666666]">{c("intl")}</span>
+        <div className="flex flex-col">
+          <span className="text-sm font-medium text-gray-700">
+            {c("WhatsApp")}
+          </span>
+          <span className="text-xs text-gray-500 mt-1">{c("whatsapp")}</span>
+        </div>
+      </div>
+
+      {/* Email Section */}
+      <div className="flex items-center gap-4 p-3 hover:bg-[#F8F8F8] rounded-lg transition-all duration-200 cursor-pointer">
+        <div className="p-2 bg-[#EA4335]/10 rounded-full">
+          <Mail className="text-[#EA4335] h-5 w-5" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-sm font-medium text-gray-700">
+            {c("Email")}
+          </span>
+          <span className="text-xs text-gray-500 mt-1">{c("email")}</span>
+        </div>
+      </div>
+
+      {/* Address Section */}
+      <div className="flex items-center gap-4 p-3 hover:bg-[#F8F8F8] rounded-lg transition-all duration-200 cursor-pointer">
+        <div className="p-2 bg-[#4285F4]/10 rounded-full">
+          <MapPin className="text-[#4285F4] h-5 w-5" />
+        </div>
+        <div className="flex flex-col">
+          <span className="text-sm font-medium text-gray-700">
+            {c("Address")}
+          </span>
+          <span className="text-xs text-gray-500 mt-1">{c("address")}</span>
         </div>
       </div>
     </div>

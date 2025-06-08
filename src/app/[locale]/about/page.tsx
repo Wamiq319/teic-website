@@ -6,8 +6,8 @@ import { useParams } from "next/navigation";
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { EmailSignupModal } from "@/components/EmailSignupModal";
 import { useState } from "react";
+import { EmailSignup } from "@/components/EmailSignup";
 
 export default function AboutPage() {
   const t = useTranslations("AboutPage");
@@ -16,7 +16,7 @@ export default function AboutPage() {
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
 
   // Get LinkedIn URL from environment variables
-  const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_URL || "#";
+  const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_SHARE_URL || "#";
 
   const scrollToContact = () => {
     const contactForm = document.getElementById("contact-form");
@@ -109,11 +109,6 @@ export default function AboutPage() {
                   <p>{t("founder.bio3")}</p>
                 </div>
                 <div className="flex flex-wrap items-center gap-4">
-                  <Link href="/contact" passHref>
-                    <Button variant="primary" onClick={scrollToContact}>
-                      {t("founder.contactButton")}
-                    </Button>
-                  </Link>
                   <a
                     href={linkedinUrl}
                     target="_blank"
@@ -139,11 +134,6 @@ export default function AboutPage() {
             {t("cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/contact" passHref>
-              <Button variant="primary" onClick={scrollToContact}>
-                {t("cta.contactButton")}
-              </Button>
-            </Link>
             <Button
               onClick={() => setIsEmailModalOpen(true)}
               variant="outline"
@@ -215,7 +205,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <EmailSignupModal
+
+      <EmailSignup
+        variant="modal"
         isOpen={isEmailModalOpen}
         onClose={() => setIsEmailModalOpen(false)}
       />

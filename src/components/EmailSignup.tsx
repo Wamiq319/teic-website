@@ -198,7 +198,7 @@ export const EmailSignup = ({
               className="w-full sm:w-auto px-8"
               disabled={isLoading}
             >
-              {isLoading ? t("submitting") : t("button")}
+              {isLoading ? t("submitting") : t("leadbutton")}
             </Button>
           </div>
           <p className="text-sm text-[#666666] text-center">

@@ -1,12 +1,26 @@
 // components/Footer.tsx
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { Globe, Twitter, Linkedin, Facebook } from "lucide-react";
+
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Globe,
+  MessageCircle,
+  Twitter,
+  Linkedin,
+  Facebook,
+} from "lucide-react";
+import { Contact } from "lucide-react";
 
 export const Footer = () => {
   const t = useTranslations("Footer");
   const c = useTranslations("contact");
   const currentYear = new Date().getFullYear();
+  const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_SHARE_URL || "#";
+  const facebookUrl = process.env.NEXT_PUBLIC_FACEBOOK_SHARE_URL || "#";
+  const twitterUrl = process.env.NEXT_PUBLIC_TWITTER_SHARE_URL || "#";
 
   const socialIcons = {
     twitter: (
@@ -29,6 +43,12 @@ export const Footer = () => {
     ),
   };
 
+  const socialLinks = {
+    twitter: twitterUrl,
+    linkedin: linkedinUrl,
+    facebook: facebookUrl,
+  };
+
   return (
     <footer className="bg-[#1A1A1A] text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +61,9 @@ export const Footer = () => {
               {["twitter", "linkedin", "facebook"].map((social) => (
                 <Link
                   key={social}
-                  href="#"
+                  href={socialLinks[social as keyof typeof socialLinks]}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={t(`social.${social}`)}
                   className="hover:scale-110 transition-transform"
                 >
@@ -95,22 +117,50 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">{c("title")}</h3>
-            <address className="not-italic text-[#B3B3B3] space-y-2">
-              <p>{c("address")}</p>
-              <p>{c("office")}</p>
-              <p>{c("whatsapp")}</p>
-              <p>{c("intl")}</p>
-              <p>{c("email")}</p>
-              <div className="pt-2">
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+              {c("title")}
+            </h3>
+
+            <address className="not-italic space-y-4">
+              {/* Primary Phone */}
+              <div className="flex items-center gap-3 text-gray-300">
+                <Phone className="h-5 w-5 flex-shrink-0 text-[#7FC242]" />
+                <p>{c("office")}</p>
+              </div>
+
+              {/* International Number */}
+              <div className="flex items-center gap-3 text-gray-300">
+                <Globe className="h-5 w-5 flex-shrink-0 text-[#7FC242]" />
+                <p>{c("intl")}</p>
+              </div>
+
+              {/* WhatsApp - green icon */}
+              <div className="flex items-center gap-3 text-gray-300 pt-1">
+                <MessageCircle className="h-5 w-5 flex-shrink-0 text-[#25D366]" />
+                <p>{c("whatsapp")}</p>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-center gap-3 text-gray-300">
+                <Mail className="h-5 w-5 flex-shrink-0 text-[#7FC242]" />
+                <p>{c("email")}</p>
+              </div>
+
+              {/* Address - at bottom as requested */}
+              <div className="flex items-start gap-3 text-gray-300 pt-3 border-t border-gray-700 mt-2">
+                <MapPin className="h-5 w-5 flex-shrink-0 text-[#7FC242] mt-0.5" />
+                <p>{c("address")}</p>
+              </div>
+
+              {/* Language Selector */}
+              <div className="pt-4">
                 <Link
                   href="#"
-                  className="inline-flex items-center text-[#7FC242] hover:text-[#5A7D2C]"
+                  className="inline-flex items-center gap-2 text-[#7FC242] hover:text-[#5A7D2C] transition-colors"
                 >
-                  <Globe className="mr-2" size={16} />
-                  {t("language")}
+                  <Globe className="h-5 w-5" />
+                  <span className="font-medium">{t("language")}</span>
                 </Link>
               </div>
             </address>

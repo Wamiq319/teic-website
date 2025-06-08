@@ -3,7 +3,7 @@
     "hero": {
       "title": "TEIC Global",
       "subtitle": "Tailored legal and financial advices for projects and companies, to optimize investments,& financial intermediation",
-      "ctaEmail": "Get Free Email Tips",
+      "ctaEmail": "Get Free Guide",
       "ctaCall": "Schedule Free Video Consultation",
       "headline1": "Trusted Financial Guidance",
       "headline2": "Across",
@@ -62,7 +62,7 @@
       ]
     },
     "leadMagnet": {
-      "title": "Get Your Free Guide",
+      "title": "Get  Free Email Tips",
       "subtitle": "5 Mistakes African Investors Make",
       "description": "Sign up to receive our exclusive guide on common investment mistakes and how to avoid them."
     }
@@ -112,7 +112,8 @@
       "name": "Your Name",
       "email": "Email Address",
       "message": "Your Message",
-      "button": "Send Message"
+      "button": "Send Message",
+      "sending": "Sending..."
     },
     "schedule": {
       "title": "Other Ways to Connect",
@@ -257,6 +258,9 @@
     }
   },
   "contact": {
+    "WhatsApp": "WhatsApp",
+    "Email": "Email",
+    "Address": "Address",
     "title": "Contact Us",
     "address": "SIS PHCIE UNIVERSITE, Yaoundé, CENTRE, BP 8126, Cameroon",
     "office": "+237 242 01 63 27",
@@ -268,6 +272,7 @@
     "title": "Get Free Ebook",
     "placeholder": "Enter your email address",
     "button": "Get Free Guide",
+    "leadbutton": "Get Email Tips",
     "submitting": "Sending...",
     "disclaimer": "We respect your privacy. Your information is safe and will never be shared.",
     "successModal": {
@@ -278,7 +283,7 @@
     }
   },
   "toastMessages": {
-    "successSubmission": "Thanks for Contacting we will get you in touch and sending you",
+    "successSubmission": "Thanks for Contacting we will get you in touch",
     "emptyEmailError": "Please enter your email address",
     "invalidEmailError": "Please enter a valid email address",
     "failedSubmission": "Failed to submit. Please try again."

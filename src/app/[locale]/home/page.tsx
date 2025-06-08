@@ -64,6 +64,7 @@ export default function HomePage() {
       <EmailSignup
         variant="standalone"
         title={t("leadMagnet.title")}
+        buttonText={t("leadMagnet.title")}
         subtitle={t("leadMagnet.subtitle")}
       />
 
