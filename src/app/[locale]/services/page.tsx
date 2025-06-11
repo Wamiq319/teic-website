@@ -1,4 +1,3 @@
-// app/services/page.tsx
 "use client";
 
 import { useTranslations } from "next-intl";
@@ -7,13 +6,13 @@ import { Button } from "@/components/ui/Button";
 import {
   ChevronRight,
   ChevronLeft,
-  Globe,
-  Shield,
-  Cpu,
-  Briefcase,
-  Handshake,
-  Landmark,
-  FileText,
+  Network,
+  Scale,
+  ScrollText,
+  Building2,
+  ShieldCheck,
+  ActivitySquare,
+  UsersRound,
 } from "lucide-react";
 import { ReactElement, useState } from "react";
 import { getCalendlyUrl, CalendlyServiceType } from "@/utils/calendly";
@@ -22,13 +21,13 @@ import { useParams } from "next/navigation";
 type ServiceKey = CalendlyServiceType;
 
 const serviceIcons: Record<ServiceKey, ReactElement> = {
-  capital_raising: <Globe className="text-[#7FC242] h-6 w-6" />,
-  debt_structuring: <Landmark className="text-[#7FC242] h-6 w-6" />,
-  escrow_services: <FileText className="text-[#7FC242] h-6 w-6" />,
-  bank_account_setup: <Briefcase className="text-[#7FC242] h-6 w-6" />,
-  guarantees_solutions: <Shield className="text-[#7FC242] h-6 w-6" />,
-  transaction_advisory: <Cpu className="text-[#7FC242] h-6 w-6" />,
-  investor_representation: <Handshake className="text-[#7FC242] h-6 w-6" />,
+  capital_raising: <Network className="text-[#fddf7a] h-6 w-6" />,
+  debt_structuring: <Scale className="text-[#fddf7a] h-6 w-6" />,
+  escrow_services: <ScrollText className="text-[#fddf7a] h-6 w-6" />,
+  bank_account_setup: <Building2 className="text-[#fddf7a] h-6 w-6" />,
+  guarantees_solutions: <ShieldCheck className="text-[#fddf7a] h-6 w-6" />,
+  transaction_advisory: <ActivitySquare className="text-[#fddf7a] h-6 w-6" />,
+  investor_representation: <UsersRound className="text-[#fddf7a] h-6 w-6" />,
 };
 
 interface ServiceItem {
@@ -39,9 +38,11 @@ interface ServiceItem {
 export default function ServicesPage() {
   const t = useTranslations("ServicesPage");
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-  const [currentCalendlyUrl, setCurrentCalendlyUrl] = useState(getCalendlyUrl('default'));
+  const [currentCalendlyUrl, setCurrentCalendlyUrl] = useState(
+    getCalendlyUrl("default")
+  );
   const params = useParams();
-  const isRTL = params.locale === 'ar';
+  const isRTL = params.locale === "ar";
   const ChevronIcon = isRTL ? ChevronLeft : ChevronRight;
 
   const services: ServiceItem[] = [
@@ -115,7 +116,7 @@ export default function ServicesPage() {
   };
 
   return (
-    <section className="bg-[#F8F8F8] py-16" dir={isRTL ? 'rtl' : 'ltr'}>
+    <section className="bg-[#F8F8F8] py-16" dir={isRTL ? "rtl" : "ltr"}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-16">
@@ -135,11 +136,16 @@ export default function ServicesPage() {
               key={service.title}
               className="bg-white p-6 rounded-lg shadow-sm border border-[#E0E0E0] hover:shadow-md transition-all"
             >
-              <div className={`flex items-start gap-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                <div className="p-2 bg-[#7FC242]/10 rounded-full">
+              <div
+                className={`flex items-start gap-4 ${
+                  isRTL ? "flex-row-reverse" : ""
+                }`}
+              >
+                <div className="p-3 rounded-full bg-gradient-to-br from-[#A8E063] to-[#56AB2F] shadow-md">
                   {serviceIcons[service.title]}
                 </div>
-                <div className={`flex-1 ${isRTL ? 'text-right' : 'text-left'}`}>
+
+                <div className={`flex-1 ${isRTL ? "text-right" : "text-left"}`}>
                   <h3 className="text-xl font-bold text-[#2E2E2E] mb-2">
                     {t(`${service.title}.title`)}
                   </h3>
@@ -149,7 +155,12 @@ export default function ServicesPage() {
 
                   <ul className="space-y-2 mb-6">
                     {service.includes.map((item) => (
-                      <li key={item} className={`flex items-start ${isRTL ? 'flex-row-reverse' : ''}`}>
+                      <li
+                        key={item}
+                        className={`flex items-start ${
+                          isRTL ? "flex-row-reverse" : ""
+                        }`}
+                      >
                         <ChevronIcon className="text-[#7FC242] h-4 w-4 mt-1 mx-2 flex-shrink-0" />
                         <span className="text-[#666666]">
                           {t(`${service.title}.includes.${item}`)}
@@ -182,7 +193,7 @@ export default function ServicesPage() {
 
           <Button
             onClick={() => {
-              setCurrentCalendlyUrl(getCalendlyUrl('default'));
+              setCurrentCalendlyUrl(getCalendlyUrl("default"));
               setIsCalendlyOpen(true);
             }}
             variant="outline"
@@ -192,7 +203,7 @@ export default function ServicesPage() {
           </Button>
         </div>
 
-        {/* Calendly Popup - Single instance */}
+        {/* Calendly Popup */}
         <CalendlyPopup
           url={currentCalendlyUrl}
           isOpen={isCalendlyOpen}

@@ -123,10 +123,10 @@ export const Footer = () => {
             </h3>
 
             <address className="not-italic space-y-4">
-              {/* Primary Phone */}
-              <div className="flex items-center gap-3 text-gray-300">
-                <Phone className="h-5 w-5 flex-shrink-0 text-[#7FC242]" />
-                <p>{c("office")}</p>
+              {/* WhatsApp - green icon */}
+              <div className="flex items-center gap-3 text-gray-300 pt-1">
+                <MessageCircle className="h-5 w-5 flex-shrink-0 text-[#25D366]" />
+                <p>{c("whatsapp")}</p>
               </div>
 
               {/* International Number */}
@@ -135,10 +135,10 @@ export const Footer = () => {
                 <p>{c("intl")}</p>
               </div>
 
-              {/* WhatsApp - green icon */}
-              <div className="flex items-center gap-3 text-gray-300 pt-1">
-                <MessageCircle className="h-5 w-5 flex-shrink-0 text-[#25D366]" />
-                <p>{c("whatsapp")}</p>
+              {/* Primary Phone */}
+              <div className="flex items-center gap-3 text-gray-300">
+                <Phone className="h-5 w-5 flex-shrink-0 text-[#7FC242]" />
+                <p>{c("office")}</p>
               </div>
 
               {/* Email */}
