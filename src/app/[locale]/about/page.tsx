@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import Link from "next/link";
 import { useState } from "react";
 import { EmailSignup } from "@/components/EmailSignup";
 
@@ -14,7 +13,7 @@ export default function AboutPage() {
   const params = useParams();
   const isRTL = params.locale === "ar";
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
-  const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_SHARE_URL || "#";
+  const linkedinUrl = process.env.NEXT_PUBLIC_FOUNDER_LINKEDIN_SHARE_URL || "#";
 
   const scrollToContact = () => {
     const contactForm = document.getElementById("contact-form");

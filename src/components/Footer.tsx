@@ -11,6 +11,7 @@ import {
   Twitter,
   Linkedin,
   Facebook,
+  Send,
 } from "lucide-react";
 import { Contact } from "lucide-react";
 
@@ -21,6 +22,7 @@ export const Footer = () => {
   const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_SHARE_URL || "#";
   const facebookUrl = process.env.NEXT_PUBLIC_FACEBOOK_SHARE_URL || "#";
   const twitterUrl = process.env.NEXT_PUBLIC_TWITTER_SHARE_URL || "#";
+  const telegramURL = process.env.NEXT_PUBLIC_TELEGRAM_SHARE_URL || "#";
 
   const socialIcons = {
     twitter: (
@@ -41,12 +43,19 @@ export const Footer = () => {
         className="text-[#7FC242] hover:text-[#5A7D2C] transition-colors"
       />
     ),
+    telegram: (
+      <Send
+        size={20}
+        className="text-[#7FC242] hover:text-[#5A7D2C] transition-colors"
+      />
+    ),
   };
 
   const socialLinks = {
     twitter: twitterUrl,
     linkedin: linkedinUrl,
     facebook: facebookUrl,
+    telegram: telegramURL,
   };
 
   return (
@@ -58,7 +67,7 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold">{t("company.title")}</h3>
             <p className="text-[#B3B3B3]">{t("company.description")}</p>
             <div className="flex space-x-4">
-              {["twitter", "linkedin", "facebook"].map((social) => (
+              {["twitter", "linkedin", "facebook", "telegram"].map((social) => (
                 <Link
                   key={social}
                   href={socialLinks[social as keyof typeof socialLinks]}

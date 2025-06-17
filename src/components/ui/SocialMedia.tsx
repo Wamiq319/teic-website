@@ -1,12 +1,13 @@
 // components/SocialMedia.tsx
 import { useTranslations } from "next-intl";
-import { Twitter, Linkedin, Facebook } from "lucide-react";
+import { Twitter, Linkedin, Facebook, Send } from "lucide-react";
 
 export const SocialMedia = () => {
   const t = useTranslations("ContactPage.social");
   const linkedinUrl = process.env.NEXT_PUBLIC_LINKEDIN_SHARE_URL || "#";
   const facebookUrl = process.env.NEXT_PUBLIC_FACEBOOK_SHARE_URL || "#";
   const twitterUrl = process.env.NEXT_PUBLIC_TWITTER_SHARE_URL || "#";
+  const telegramUrl = process.env.NEXT_PUBLIC_TELEGRAM_SHARE_URL || "#";
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-sm border border-[#E0E0E0]">
@@ -29,6 +30,12 @@ export const SocialMedia = () => {
           label={t("facebook")}
           icon={<Facebook className="h-6 w-6" />}
           url={facebookUrl}
+        />
+        <SocialIcon
+          name="telegram"
+          label={"telegram"}
+          icon={<Send className="h-6 w-6" />}
+          url={telegramUrl}
         />
       </div>
     </div>
