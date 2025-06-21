@@ -33,14 +33,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between gap-1 sm:gap-3">
           {/* Logo */}
           <Link href={`/${locale}`} aria-label="TEIC Global Home">
-            <Image
-              src="/assets/images/logo.png"
-              alt="TEIC Global Logo"
-              className="w-8 sm:w-10 md:w-12"
-              width={32}
-              height={32}
-              loading="eager"
-            />
+            <div className="w-16 sm:w-20 md:w-24 h-8 sm:h-10 md:h-12 overflow-hidden">
+              <Image
+                src="/assets/svgs/logo.svg"
+                alt="TEIC Global Logo"
+                className="w-full h-full object-cover object-center"
+                width={96}
+                height={48}
+                loading="eager"
+              />
+            </div>
           </Link>
 
           {/* Navigation Links */}

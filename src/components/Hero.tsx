@@ -29,13 +29,13 @@ export const HeroSection = ({ onCallButtonClick }: HeroSectionProps) => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center py-12">
         {/* Logo */}
-        <div className="mb-1 w-32 md:w-44">
+        <div className="mb-1 w-32 md:w-44 h-16 md:h-22 overflow-hidden">
           <Image
-            src="/assets/images/logo.png"
+            src="/assets/svgs/logo.svg"
             alt="TEIC Global Logo"
             width={180}
-            height={32}
-            className="w-full h-auto"
+            height={90}
+            className="w-full h-full object-cover object-center"
             priority
           />
         </div>
