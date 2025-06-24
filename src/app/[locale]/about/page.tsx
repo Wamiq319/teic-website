@@ -25,7 +25,7 @@ export default function AboutPage() {
   return (
     <div className="bg-[#F8F8F8]" dir={isRTL ? "rtl" : "ltr"}>
       {/* Hero Section */}
-      <section className="mt-6">
+      <section className="pt-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">
             <span className="block text-[#2E2E2E]">{t("title1")}</span>
