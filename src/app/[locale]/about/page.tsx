@@ -25,14 +25,14 @@ export default function AboutPage() {
   return (
     <div className="bg-[#F8F8F8]" dir={isRTL ? "rtl" : "ltr"}>
       {/* Hero Section */}
-      <section className="py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+      <section className="mt-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">
             <span className="block text-[#2E2E2E]">{t("title1")}</span>
             <span className="block text-[#7FC242]">{t("title2")}</span>
           </h1>
           <div className="w-20 h-1.5 bg-[#7FC242] mx-auto mb-6"></div>
-          <p className="text-lg text-[#666666] max-w-3xl mx-auto">
+          <p className="text-lg text-[#666666] max-w-3xl mx-auto text-left">
             {t("subtitle")}
           </p>
         </div>

@@ -2,8 +2,8 @@
   "HomePage": {
     "hero": {
       "title": "TEIC Global",
-      "subtitle": "Mashauri ya kisheria na kifedha vilivyobinafsishwa kwa miradi na kampuni, kuimarisha uwekezaji, na uhamasishaji wa kifedha",
-      "ctaEmail": "Pata Mwongozo wa Bure",
+      "subtitle": "Huduma za uhamasishaji wa kifedha na utaalam kwa miradi na kampuni ili kuboresha uwekezaji na biashara ya kuvuka mipaka",
+      "ctaEmail": "Pata Mwongozo Wetu wa Bure",
       "ctaCall": "Panga Mashauriano ya Video ya Bure",
       "headline1": "Mshauri wa Kifedha Anayetegemewa",
       "headline2": "Kote",
@@ -255,14 +255,14 @@
     "Email": "Barua Pepe",
     "Address": "Anwani",
     "title": "Wasiliana Nasi",
-    "address": "SIS PHCIE UNIVERSITE, Yaoundé, CENTRE, BP 8126, Kamerun",
+    "address": "Yaoundé, CENTRE, BP 8126, Cameroon",
     "office": "+237 242 01 63 27",
-    "whatsapp": "622 02 25 92",
+    "whatsapp": "237 622 02 25 92",
     "intl": "+1 484 297 8880",
     "email": "contact@teicglobal.com"
   },
   "EmailSignup": {
-    "title": "Pata eBook ya Bure",
+    "title": "Pata eBook (Bure)",
     "placeholder": "Weka anwani yako ya barua pepe",
     "button": "Pata Mwongozo wa Bure",
     "leadbutton": "Pata Vidokezo vya Barua Pepe",

@@ -2,8 +2,8 @@
   "HomePage": {
     "hero": {
       "title": "TEIC Global",
-      "subtitle": "Tailored legal and financial advices for projects and companies, to optimize investments,& financial intermediation",
-      "ctaEmail": "Get Free Guide",
+      "subtitle": "Financial intermediation services & expertise for projects and companies to optimize investments & cross-border trading",
+      "ctaEmail": "Get our Free Guide",
       "ctaCall": "Schedule Free Video Consultation",
       "headline1": "Trusted Financial Guidance",
       "headline2": "Across",
@@ -234,7 +234,7 @@
       "position": "Founder & Principal Consultant",
       "bio1": "As a finance and trade advisory professional rooted in actuarial science, I've dedicated my career to mastering the complexities of trade risk, structured instruments, and capital markets. My deep specialization in financial guarantees, SBLCs, and cross-border monetization strategies positions me uniquely to lead what has become the most formidable financial intermediation firm serving serious clients globally.",
       "bio2": "TEIC GLOBAL represents more than a consultancy—it's a strategic think tank housing world-class experts with collective experience spanning hundreds of years across every major financial market. Our team includes former investment bankers from tier-one institutions, seasoned trade finance specialists, regulatory compliance veterans, structured products architects, and cross-border transaction experts. This creates an unmatched intellectual force in financial intermediation. We deliver institutional-grade solutions tailored to your capital requirements, risk profile, and timeline—no cookie-cutter products, no one-size-fits-all approaches.",
-      "bio3": "I founded TEIC GLOBAL with a simple conviction: African businesses deserve direct access to sophisticated financial instruments—without traditional barriers, excessive fees, or bureaucratic delays. We cut through market noise to deliver what matters—speed, precision, and results. Despite our technical sophistication, we operate with humility and simplicity. When timing is critical, we mobilize our full intellectual and operational force to deliver outcomes others promise but can’t execute. This is financial intermediation without compromise—world-class expertise, transparent pricing, and the speed your business demands.",
+      "bio3": "I founded TEIC GLOBAL with a simple conviction: African businesses deserve direct access to sophisticated financial instruments—without traditional barriers, excessive fees, or bureaucratic delays. We cut through market noise to deliver what matters—speed, precision, and results. Despite our technical sophistication, we operate with humility and simplicity. When timing is critical, we mobilize our full intellectual and operational force to deliver outcomes others promise but can't execute. This is financial intermediation without compromise—world-class expertise, transparent pricing, and the speed your business demands.",
       "contactButton": "Contact Steeve",
       "linkedin": "LinkedIn Profile"
     },
@@ -262,14 +262,14 @@
     "Email": "Email",
     "Address": "Address",
     "title": "Contact Us",
-    "address": "SIS PHCIE UNIVERSITE, Yaoundé, CENTRE, BP 8126, Cameroon",
+    "address": "Yaoundé, CENTRE, BP 8126, Cameroon",
     "office": "+237 242 01 63 27",
-    "whatsapp": "622 02 25 92",
+    "whatsapp": "237 622 02 25 92",
     "intl": "+1 484 297 8880",
     "email": "contact@teicglobal.com"
   },
   "EmailSignup": {
-    "title": "Get Free Ebook",
+    "title": "Get the Ebook (Free)",
     "placeholder": "Enter your email address",
     "button": "Get Free Guide",
     "leadbutton": "Get Email Tips",

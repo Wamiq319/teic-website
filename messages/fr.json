@@ -2,8 +2,8 @@
   "HomePage": {
     "hero": {
       "title": "TEIC Global",
-      "subtitle": "Conseils juridiques et financiers sur mesure pour les projets et entreprises, pour optimiser les investissements et l'intermédiation financière",
-      "ctaEmail": "Obtenir le Guide Gratuit",
+      "subtitle": "Services d'intermédiation financière et expertise pour les projets et entreprises afin d'optimiser les investissements et le commerce transfrontalier",
+      "ctaEmail": "Obtenez notre Guide Gratuit",
       "ctaCall": "Planifier une Consultation Vidéo Gratuite",
       "headline1": "Conseil Financier de Confiance",
       "headline2": "À Travers",
@@ -255,14 +255,14 @@
     "Email": "Email",
     "Address": "Adresse",
     "title": "Contactez-Nous",
-    "address": "SIS PHCIE UNIVERSITE, Yaoundé, CENTRE, BP 8126, Cameroun",
+    "address": "Yaoundé, CENTRE, BP 8126, Cameroon",
     "office": "+237 242 01 63 27",
-    "whatsapp": "622 02 25 92",
+    "whatsapp": "237 622 02 25 92",
     "intl": "+1 484 297 8880",
     "email": "contact@teicglobal.com"
   },
   "EmailSignup": {
-    "title": "Obtenez un eBook Gratuit",
+    "title": "Obtenez l'eBook (Gratuit)",
     "placeholder": "Entrez votre adresse email",
     "button": "Obtenir le Guide Gratuit",
     "leadbutton": "Recevoir des Conseils par Email",
