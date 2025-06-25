@@ -135,7 +135,7 @@ export const Footer = () => {
               {/* WhatsApp - green icon */}
               <div className="flex items-center gap-3 text-gray-300 pt-1">
                 <MessageCircle className="h-5 w-5 flex-shrink-0 text-[#25D366]" />
-                <p>{c("whatsapp")}</p>
+                <p>+237 622 02 25 92</p>
               </div>
 
               {/* International Number */}
